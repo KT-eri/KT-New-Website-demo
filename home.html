@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>251028 home Test</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
+    <link rel="stylesheet" href="./style/slider2.css" />
+  </head>
+  <body>
+    <div class="body-container">
+    <header>
+      <!-- <div class="container"> -->
+        <div class="brand-img"><img src="./img/KT logo-03.png" alt="" /></div>
+        <div class="member-lan">
+          <div class="member-btn">
+            <img src="./img/icon/member.svg" alt="" class="member-icon" />
+            <a><span class="h6-style">會員登入</span></a>
+            <span>|</span>
+            <a><span class="h6-style">登出</span></a>
+          </div>
+          <div class="language-select">
+            <div class="lang-btn">
+              <span>EN</span>
+              <span class="arrow">&#9662;</span>
+            </div>
+            <ul class="lang-list">
+              <li><a href="#" data-lang="zh">繁體中文</a></li>
+              <li><a href="#" data-lang="en">English</a></li>
+              <li><a href="#" data-lang="es">Español</a></li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+    </header>
+    <div class="hero-wrapper">
+      <nav>
+        <div class="container">
+          <ul id="ul-nb">
+            <a href="#"><li class="h6-style">產品總覽</li></a>
+            <a href="#"><li class="h6-style">技術支援</li></a>
+            <a href="#"><li class="h6-style">關於 KINGTONY</li></a>
+            <a href="#"><li class="h6-style">全球據點</li></a>
+          </ul>
+          <button class="search-btn h6-style">快速搜尋</button>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-message">
+            <h1>專業工具，值得信賴</h1>
+            <p>
+              自 1977 年成立以來，KINGTONY
+              一直致力於提供高品質的手工具和汽修工具。我們的產品以其耐用性、創新設計和卓越性能而聞名，深受全球專業技師和
+              DIY 愛好者的信賴。
+            </p>
+          </div>
+          <div class="hero-btn">
+            <div class="hero-btn-left">
+              <a href=""><button class="go-to-product">立即探索產品系列</button></a>
+              <a href=""><button class="go-to-catalog">前往目錄</button></a>
+            </div>
+            <a href="#"
+              ><span class="hero-btn-right">
+                進一步了解工具使用說明 >
+              </span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- 產品 slider -->
+              <div class="block-wrapper">
+          <div class="slider">
+              <!-- radio pages -->
+            <input type="radio" name="page" id="p1" checked>
+            <input type="radio" name="page" id="p2">
+            <input type="radio" name="page" id="p3">
+            <input type="radio" name="page" id="p4">
+
+    <div class="viewport">
+      <div class="track">
+        <!-- ===== Slide 1 ===== -->
+        <section class="slide" id="s1">
+          <div class="mosaic mosaic--s1">
+            <a class="tile tile--lt" style="background-image: url(./img/p-01.png);">
+              <h3 class="tile__title">手動套筒及配件</h3>
+            </a>
+            <a class="tile tile--lb" style="background-image: url(./img/p-02.png);">
+              <h3 class="tile__title">氣動套筒及配件</h3> 
+            </a>
+            <a class="tile tile--center" style="background-image: url(./img/p-03.png);">
+              <h3 class="tile__title">工具箱及工具車組套</h3>
+            </a>
+            <a class="tile tile--rt" style="background-image: url(./img/p-04.png);">
+              <h3 class="tile__title">扭力工具類</h3>
+            </a>
+            <a class="tile tile--rb" style="background-image: url(./img/p-05.png);">
+              <h3 class="tile__title">扳手</h3>
+            </a> 
+          </div>
+        </section>
+
+<!-- ===== Slide 2 | 版型：上面「大左小右」，下面三等分 ===== -->
+<section class="slide" id="s2">
+  <div class="mosaic mosaic--s2">
+    <a class="tile s2--top-left"  style="">
+      <h3 class="tile__title">氣動工具</h3>
+    </a>
+    <a class="tile s2--top-right" style="">
+      <h3 class="tile__title">鉗類</h3>
+    </a>
+    <a class="tile s2--b1"       style="">
+      <h3 class="tile__title">管道工具</h3>
+    </a>
+    <a class="tile s2--b2"       style="">
+      <h3 class="tile__title">螺絲起子</h3>
+    </a>
+    <a class="tile s2--b3"       style="">
+      <h3 class="tile__title">耐電壓</h3>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Slide 3 | 版型：上面左右各一塊，下面一塊滿版 ===== -->
+<section class="slide" id="s3">
+  <div class="mosaic mosaic--s3">
+    <a class="tile s3--top-left"  style="">
+      <h3 class="tile__title">電子電工</h3>
+    </a>
+    <a class="tile s3--top-right" style="">
+      <h3 class="tile__title">鎚類與敲擊工具</h3>
+    </a>
+    <a class="tile s3--bottom"    style="">
+      <h3 class="tile__title">通用工具</h3>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Slide 4 | 版型：2×2 四等分（左上紅） ===== -->
+<section class="slide" id="s4">
+  <div class="mosaic mosaic--s4">
+    <a class="tile s4--tl" style="">
+      <h3 class="tile__title">燈類</h3>
+    </a>
+    <a class="tile s4--tr" style="">
+      <h3 class="tile__title">汽車維修工具</h3>
+    </a>
+    <a class="tile s4--bl" style="">
+      <h3 class="tile__title">STARTER專業入門系列</h3>
+    </a>
+    <a class="tile s4--br" style="">
+      <h3 class="tile__title">促銷商品</h3>
+    </a>
+  </div>
+</section>
+  </div> 
+          </div> 
+            <div class="nav-dots dots">
+            <label for="p1" aria-label="第 1 頁"></label>
+            <label for="p2" aria-label="第 2 頁"></label>
+            <label for="p3" aria-label="第 3 頁"></label>
+            <label for="p4" aria-label="第 4 頁"></label>
+          </div> 
+          </div>
+          <div class="new-product"><h1>新品專區</h1>
+          <a href=""><button class="go-to-new-product">更多資訊</button></a></div>
+          </div> 
+          </div> 
+<span><img class="socket1" src="./img/sockets.svg" alt=""></span>
+<!-- 目錄及活動 slider -->
+        <section class="catalog-wrapper">
+          <!-- <span><img class="socket1" src="./img/sockets.svg" alt=""></span> -->
+        <div class="catalog-content">
+          <div class="catalog-slider">
+  <button class="catalog-nav catalog-prev" aria-label="上一頁">
+    <img src="./img/icon/left.svg" alt="prev">
+  </button>
+
+  <div class="catalog-viewport">
+    <div class="catalog-track">
+
+      <a class="catalog-tile" style="background-image:url('./img/catalog.PNG');">
+        <h3 class="catalog-title">周年精選</h3>
+      </a>
+
+      <a class="catalog-tile" style="background-image:url('./img/catalog.PNG');">
+        <h3 class="catalog-title">ROCK系列</h3>
+      </a>
+
+      <a class="catalog-tile" style="background-image:url('./img/catalog.PNG');">
+        <h3 class="catalog-title">最新消息</h3>
+      </a>
+
+      <a class="catalog-tile" style="background-image:url('./img/catalog.PNG');">
+        <h3 class="catalog-title">電子報</h3>
+      </a>
+
+    </div>
+  </div>
+
+  <button class="catalog-nav catalog-next" aria-label="下一頁">
+    <img src="./img/icon/right.svg" alt="next">
+  </button>
+</div>
+</div>
+</section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".socket1", {
+  x: "30vw", // 你想要的移動距離
+  ease: "power1.out",
+  rotate: 360,
+  scrollTrigger: {
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 0.5, // 跟著卷軸
+    markers: true // 顯示標記
+  }
+})
+
+
+</script>
+<!-- catalog slider controller -->
+<script>
+  // 產品 Slider -> 自動播放
+   (function(){
+    const ids = ["p1","p2","p3","p4"];
+    let i = 0;
+    setInterval(() => {
+      i = (i + 1) % ids.length;
+      document.getElementById(ids[i]).checked = true;
+    }, 5000); // 每 5 秒自動切換
+  })();
+
+  const track = document.querySelector('.catalog-track');
+  const next = document.querySelector('.catalog-next');
+  const prev = document.querySelector('.catalog-prev');
+  const tiles = [...document.querySelectorAll('.catalog-tile')];
+  const visible = 2;
+  let index = 0;
+
+  // 目錄 Slider -> 計算每次移動的距離
+  function stepPx() {
+    const tile = tiles[0];
+    const gap = parseFloat(getComputedStyle(tile).marginRight);
+    return tile.offsetWidth + gap;
+  }
+  function update(){
+    track.style.transform = `translateX(-${index * stepPx()}px)`;
+  }
+  next.addEventListener('click', () => {
+    if (index < tiles.length - visible) index++;
+    update();
+  });
+  prev.addEventListener('click', () => {
+    if (index > 0) index--;
+    update();
+  });
+  update();
+</script>
+  </body>
+</html>

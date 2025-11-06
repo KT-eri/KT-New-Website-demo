@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>250604Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
+        }
+        body{
+            padding: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container-fluid,
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* padding: 1rem; */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .col-lg-4,
+        .col-lg-6,
+        .col-lg-11,
+        .col-lg-12 {
+            padding: 1rem;
+            flex: 1 1 100%;
+        }
+
+        @media(min-width: 992px) {
+            .col-lg-4 {
+                flex: 0 0 32%;
+            }
+
+            .col-lg-6 {
+                flex: 0 0 48%;
+            }
+
+            .col-lg-11 {
+                flex: 0 0 91.666%;
+            }
+
+            .col-lg-12 {
+                flex: 0 0 100%;
+            }
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .sticky_box {
+            margin-bottom: 2rem;
+        }
+
+        .swiper {
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        .swiper-slide img {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .full-width-banner img {
+            width: 100vw;
+            height: auto;
+            display: block;
+        }
+
+        .intro-video {
+            margin-bottom: 20px;
+        }
+
+        .spacer {
+            height: 50px;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 700px;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .video-wrapper {
+                padding: 0 1rem;
+            }
+
+            .video-wrapper iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">40th Anniversary Special
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    </p>
+
+    <!-- Intro Video --> 
+    <section class="intro-video"><iframe width="100%" height="700" src="https://www.youtube.com/embed/-b8Egwh4idU"
+            frameborder="0" allowfullscreen=""></iframe></section>
+    <header class="nav_sticky">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+                    <div class="row justify-content-between">
+                        <div class="nav_s_left"><span style="text-transform: none !important;">Enjoy your work</span>
+                            <h3 style="text-transform: none !important;">Designed to bring joy to your work</h3>
+                        </div>
+                        <div class="nav_s_right">
+                            <div class="nav_s_dropdown"></div>
+                            <div class="nav_shop_cart"><a href="https://youtu.be/t7KfbA6i1Bc" target="_blank">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="full-width-banner"><a href="https://youtu.be/t7KfbA6i1Bc" target="_blank"> <img
+                src="https://www.kingtony.com/images/slidepage/40TH/40th-image-en.jpg" alt="40th image"> </a></div>
+    <section class="spacer"></section>
+    <section class="sticky_title1 video-wrapper"><iframe width="320" height="240"
+            src="https://www.youtube.com/embed/t7KfbA6i1Bc" frameborder="0" allowfullscreen=""></iframe></section>
+    <!-- Features Section -->
+    <section class="relative bg5 p_sticky_an" style="margin-top: 20px;">
+        <div class="sticky_title2 sticky_title3">
+            <h3>Features</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6"><img src="https://www.kingtony.com/images/slidepage/40TH/40thclass_pic-all-en.jpg"
+                    alt="KING TONY 40TH"></div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="p_sticky gs_reveal">
+                        <h2 style="color: #006cba;">Legacy of Quality, No Compromises</h2>
+                        <img src="https://www.kingtony.com/images/slidepage/40TH/copywriting1-en.jpg"
+                            alt="Legacy of Quality">
+                    </div>
+                    <div class="p_sticky gs_reveal">
+                        <h2 style="color: #006cba;">The Choice of Professionals, Precision</h2>
+                        <img src="https://www.kingtony.com/images/slidepage/40TH/copywriting2-en.jpg"
+                            alt="The Choice of Professionals">
+                    </div>
+                    <div class="p_sticky gs_reveal">
+                        <h2 style="color: #006cba;">One Strike, Total Power</h2>
+                        <img src="https://www.kingtony.com/images/slidepage/40TH/copywriting3-en.jpg" alt="One Strike">
+                    </div>
+                    <div class="p_sticky gs_reveal">
+                        <h2 style="color: #006cba;">Innovation in Motion, Craftsmanship</h2>
+                        <img src="https://www.kingtony.com/images/slidepage/40TH/copywriting4-en.jpg"
+                            alt="Innovation in Motion">
+                    </div>
+                    <div class="p_sticky gs_reveal">
+                        <h2 style="color: #006cba;">Enjoy your work, Perform with Ease</h2>
+                        <img src="https://www.kingtony.com/images/slidepage/40TH/copywriting5-en.jpg"
+                            alt="Work with Joy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Grid -->
+    <section class="sticky-banner6">
+        <div class="container">
+            <div class="row align-items-center"><!-- 第一欄 -->
+                <div class="col-lg-4">
+                    <div class="sticky_box gs_reveal product-box"><a
+                            href="https://www.kingtony.com/product/109-PC-Tool-Box-Set-902-109MR" target="_blank"> <img
+                                src="https://www.kingtony.com/images/slidepage/40TH/40thclass_pic_902-109MR.jpg"
+                                alt="902-109MR"> </a>
+                        <h4 style="text-align: center;">109 PC. Tool Box Set</h4>
+                        <h3 style="text-align: center;">902-109MR</h3>
+                        <div style="text-align: center;"><a class="cta-button"
+                                href="https://www.kingtony.com/product/109-PC-Tool-Box-Set-902-109MR"
+                                target="_blank">Learn More</a></div>
+                        <a href="https://www.kingtony.com/product/26-PC-1-4-DR-6-Point-Socket-Wrench-Set-2526MR"
+                            target="_blank"> <img
+                                src="https://www.kingtony.com/images/slidepage/40TH/40thclass_pic_2526MR.jpg"
+                                alt="2526MR"> </a>
+                        <h4 style="text-align: center;">26 PC. 1/4" DR. 6 Point Socket Wrench Set</h4>
+                        <h3 style="text-align: center;">2526MR</h3>
+                        <div style="text-align: center;"><a class="cta-button"
+                                href="https://www.kingtony.com/product/26-PC-1-4-DR-6-Point-Socket-Wrench-Set-2526MR"
+                                target="_blank">Learn More</a></div>
+                    </div>
+                </div>
+                <!-- 第二欄 -->
+                <div class="col-lg-4">
+                    <div class="sticky_box gs_reveal product-box"><a
+                            href="https://www.kingtony.com/product/24-PC-1-2-DR-6-Point-Socket-Wrench-Set-4528MR"
+                            target="_blank"> <img
+                                src="https://www.kingtony.com/images/slidepage/40TH/40thclass_pic_4528MR.jpg"
+                                alt="4528MR"> </a>
+                        <h4 style="text-align: center;">24 PC. 1/2" DR. 6 Point Socket Wrench Set</h4>
+                        <h3 style="text-align: center;">4528MR</h3>
+                        <div style="text-align: center;"><a class="cta-button"
+                                href="https://www.kingtony.com/product/24-PC-1-2-DR-6-Point-Socket-Wrench-Set-4528MR"
+                                target="_blank">Learn More</a></div>
+                        <a href="https://www.kingtony.com/tw/product/23-PC-6-Point-Socket-Wrench-Set-6323MR"
+                            target="_blank"> <img
+                                src="https://www.kingtony.com/images/slidepage/40TH/40thclass_pic_6323MR.jpg"
+                                alt="6323MR"> </a>
+                        <h4 style="text-align: center;">23 PC. 3/4" DR. 6 Point Socket Wrench Set</h4>
+                        <h3 style="text-align: center;">6323MR</h3>
+                        <div style="text-align: center;"><a class="cta-button"
+                                href="https://www.kingtony.com/tw/product/23-PC-6-Point-Socket-Wrench-Set-6323MR"
+                                target="_blank">Learn More</a></div>
+                    </div>
+                </div>+
+                <!-- 第三欄 -->
+                <div class="col-lg-4">
+                    <div class="sticky_box gs_reveal product-box"><a
+                            href="https://www.kingtony.com/product/Heavy-Duty-Adjustable-Torque-Wrench-34462-DG"
+                            target="_blank"> <img
+                                src="https://www.kingtony.com/images/slidepage/40TH/40thclass_pic_34462-1DG.jpg"
+                                alt="34462-1DG"> </a>
+                        <h4 style="text-align: center;">Heavy Duty Adjustable Torque Wrench</h4>
+                        <h3 style="text-align: center;">34462-DG</h3>
+                        <div style="text-align: center;"><a class="cta-button"
+                                href="https://www.kingtony.com/product/Heavy-Duty-Adjustable-Torque-Wrench-34462-DG"
+                                target="_blank">Learn More</a></div>
+                        <a href="https://www.kingtony.com/product/132-PC-Tool-Box-Set-9A05-132CR" target="_blank"> <img
+                                src="https://www.kingtony.com/images/slidepage/40TH/40thclass-pic-9A05-132CR.jpg"
+                                alt="9A05-132CR"> </a>
+                        <h4 style="text-align: center;">132 PC. Tool Box Set</h4>
+                        <h3 style="text-align: center;">9A05-132CR</h3>
+                        <div style="text-align: center;"><a class="cta-button"
+                                href="https://www.kingtony.com/product/132-PC-Tool-Box-Set-9A05-132CR"
+                                target="_blank">Learn More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper Gallery -->
+    <section class="store-gallery">
+        <div class="container">
+            <h3 class="text-center" style="font-size: 2rem; font-weight: bold; color: #006cba;"><span
+                    style="font-size: 2.5rem; color: #e60012;">40<sup>th</sup> Anniversary</span> | <span
+                    style="color: #333;">Classic &times; Selected</span></h3>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/6323MR-9TH41-XL-B01.jpg" alt="6323MR">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/6323MR-9TH41-XL-B02.jpg" alt="6323MR">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/902-109MR-2126A-18-B05.jpg"
+                            alt="902-109MR"></div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/2526MR.ADVT-06-B03.jpg" alt="2526MR">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/2526MR.ADVT-06-B02.jpg" alt="ADVT-06">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/2526MR.ADVT-06-B04.jpg" alt="2526MR">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/2526MR.ADVT-06-B05.jpg" alt="2526MR">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/2526MR.ADVT-06-B01.jpg" alt="ADVT-06">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/9A05-132CR.2126A-18-B05.jpg"
+                            alt="9A05-132CR"></div>
+                    <div class="swiper-slide"><img
+                            src="https://www.kingtony.com/images/slidepage/40TH/9A05-132CR.2126A-18-B01.jpg"
+                            alt="9A05-132CR"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div style="text-align: center; margin: 20px 0;"><a href="https://www.kingtony.com/contact.php" target="_blank"
+                style="display: inline-block; font-size: 1.6rem; font-weight: bold; padding: 20px 50px; background: linear-gradient(to right, #0077d9, #005caf); color: #fff; border-radius: 12px; text-decoration: none; box-shadow: 0 8px 20px rgba(0, 108, 186, 0.4);">
+                Contact US </a></div>
+    </section>
+    <hr style="border: none; border-top: 2px solid #ccc; margin: 40px 0;"><!-- Third Video -->
+    <section class="sticky_title1 video-wrapper">
+        <h3 class="text-center" style="margin-bottom: 30px; font-size: 2rem; font-weight: bold; color: #005caf;">What
+            Makes a Tool Classic</h3>
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/in7kDvU8O1E" frameborder="0"
+            allowfullscreen=""></iframe>
+    </section>
+    <!-- Swiper Script -->
+    <p>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="text/javascript"></script>
+        <script type="text/javascript">// <![CDATA[
+            document.addEventListener('DOMContentLoaded', function () {
+                new Swiper('.swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+                });
+            });
+            // ]]></script>
+    </p>
+</body>
+
+</html>

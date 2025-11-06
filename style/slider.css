@@ -1,0 +1,180 @@
+:root {
+  --gap: 8px; 
+  --accent: #DC000C;    
+  --title: #fff;
+  --shadow: 0 8px 30px rgba(0, 0, 0, .25);
+   /* 可調：最小寬 320px、偏好 92vw、最大 900px */
+  --slide-w: clamp(320px, 80vw, 900px);
+  /* 可調：統一顯示比例（16:9 / 4:3 / 1:1 都行） */
+  --slide-ratio: 16 / 9;
+}
+
+/* ===== Slider Shell ===== */
+.slider {
+  flex: 0 0 65%;
+  width: 100%;
+  /* max-width: 900px;  */
+  height: 100%;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;       /* ✅ 限定內容不超出邊界 */
+  user-select: none;
+}
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.viewport {
+  width: 100%;
+  overflow: hidden;
+}
+.track {
+  display: flex;
+  transition: transform .55s cubic-bezier(.2, .7, 0, 1);
+  will-change: transform;
+}
+.slide {
+   flex: 0 0 100%;             /* ✅ 一頁顯示一張 */
+  max-width: 100%;
+  aspect-ratio: var(--slide-ratio);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide .mosaic {
+   width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.dots label {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.dots label:hover { transform: scale(1.2); }
+#p1:checked ~ .dots label[for="p1"],
+#p2:checked ~ .dots label[for="p2"],
+#p3:checked ~ .dots label[for="p3"],
+#p4:checked ~ .dots label[for="p4"] { background: #111; }
+/* ===== Mosaic Layouts ===== */
+/* ==== Slide 1: 5 格 ==== */
+.mosaic {
+  width: 100%;
+}
+.mosaic--s1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--gap);
+  overflow: hidden;
+}
+
+.tile--lt { grid-area: 1/1; }
+.tile--lb { grid-area: 2/1; }
+.tile--center { grid-column: 2; grid-row: 1 / span 2; }
+.tile--rt { grid-area: 1/3; }
+.tile--rb { grid-area: 2/3; }
+
+
+/* ==== Slide 2: 上大左小右 + 下三等分 ==== */
+.mosaic--s2{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: var(--gap);
+  overflow: hidden;
+}
+.mosaic--s2 .s2--top-left{  grid-column: 1 / span 3; grid-row:1; }
+.mosaic--s2 .s2--top-right{ grid-column: 4 / span 3; grid-row:1; }
+.mosaic--s2 .s2--b1{        grid-column: 1 / span 2; grid-row:2; }
+.mosaic--s2 .s2--b2{        grid-column: 3 / span 2; grid-row:2; }
+.mosaic--s2 .s2--b3{        grid-column: 5 / span 2; grid-row:2; }
+
+/* ==== Slide 3: 上左右兩塊 + 下滿版 ==== */
+.mosaic.mosaic--s3{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: var(--gap);
+  overflow: hidden;
+}
+.mosaic--s3 .s3--top-left{  grid-column: 1 / span 3; grid-row:1; }
+.mosaic--s3 .s3--top-right{ grid-column: 4 / span 3; grid-row:1; }
+.mosaic--s3 .s3--bottom{    grid-column: 1 / span 6; grid-row:2; }
+
+/* ==== Slide 4: 四等分 2×2 ==== */
+.mosaic.mosaic--s4{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--gap); 
+  overflow: hidden;
+}
+.mosaic--s4 .s4--tl{ grid-column:1; grid-row:1; }
+.mosaic--s4 .s4--tr{ grid-column:2; grid-row:1; }
+.mosaic--s4 .s4--bl{ grid-column:1; grid-row:2; }
+.mosaic--s4 .s4--br{ grid-column:2; grid-row:2; }
+
+
+
+/* 單格卡片 */
+.tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0; /* remove rounded corners */
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--title);
+  background: #ddd center/cover no-repeat;
+  isolation: isolate;
+}
+.tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.38));
+}
+.tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--accent);
+  transform: translateY(100%);
+  transition: transform .5s cubic-bezier(.2, .7, 0, 1);
+}
+.tile__title {
+  position: relative;
+  z-index: 1;
+  transform: scale(1);
+  transition: transform .45s cubic-bezier(.2, .7, 0, 1);
+  text-shadow: 0 5px 18px rgba(0,0,0,.35);
+  padding: 0 20px;
+}
+.tile:hover::after { transform: translateY(0); }
+.tile:hover .tile__title { transform: scale(1.12); }
+/* 依 checked 的頁碼，推動 track 橫移對位 */
+#p1:checked ~ .viewport .track { transform: translateX(0); }
+#p2:checked ~ .viewport .track { transform: translateX(-100%); }
+#p3:checked ~ .viewport .track { transform: translateX(-200%); }
+#p4:checked ~ .viewport .track { transform: translateX(-300%); }
+
+
+/* RWD */
+/* @media (max-width: 640px) {
+  :root { --h: 360px; --gap: 8px; }
+} */

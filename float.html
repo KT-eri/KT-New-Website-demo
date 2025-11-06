@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style/float.css"> -->
+    <style>
+       body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.floating {
+  position: fixed; /* 固定在畫面上 */
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  pointer-events: none; /* 讓滑鼠穿透 */
+}
+
+.content {
+  padding: 100px;
+  background-color: aquamarine;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="floating">🌟 I'm floating!</div>
+
+<section class="content">
+  <h1>Hero Section</h1>
+  <p>網站內容...</p>
+  <div style="height: 500px;"></div>
+</section>
+<script>
+    window.addEventListener("scroll", () => {
+  const scroll = window.scrollY;
+  const speed = 0.1; // 調整前景物件速度（越小越慢）
+  document.querySelector(".floating").style.transform = `
+    translate(-50%, calc(-50% + ${scroll * speed}px))
+  `;
+});
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.floating {
+  position: fixed; /* 固定在畫面上 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  pointer-events: none; /* 讓滑鼠穿透 */
+}
+
+.content {
+  padding: 100px;
+}

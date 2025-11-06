@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalog 雙物件 Slider</title>
+  <link rel="stylesheet" href="slider2.css" />
+</head>
+<body>
+
+<div class="catalog-slider">
+  <button class="catalog-nav catalog-prev" aria-label="上一頁">
+    <img src="icon.svg" alt="prev">
+  </button>
+
+  <div class="catalog-viewport">
+    <div class="catalog-track">
+
+      <a class="catalog-tile" style="background-image:url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=1200&q=80');">
+        <h3 class="catalog-title">氣動套筒</h3>
+      </a>
+
+      <a class="catalog-tile" style="background-image:url('https://images.unsplash.com/photo-1493529940643-1caba1bd1d87?w=1200&q=80');">
+        <h3 class="catalog-title">綜合工具組</h3>
+      </a>
+
+      <a class="catalog-tile" style="background-image:url('https://images.unsplash.com/photo-1508898578281-774ac4893bd0?w=1200&q=80');">
+        <h3 class="catalog-title">工作燈</h3>
+      </a>
+
+      <a class="catalog-tile" style="background-image:url('https://images.unsplash.com/photo-1616628188460-8c44c5eefa6a?w=1200&q=80');">
+        <h3 class="catalog-title">耐電壓工具</h3>
+      </a>
+
+    </div>
+  </div>
+
+  <button class="catalog-nav catalog-next" aria-label="下一頁">
+    <img src="icon.svg" alt="next">
+  </button>
+</div>
+
+<script>
+  const track = document.querySelector('.catalog-track');
+  const next = document.querySelector('.catalog-next');
+  const prev = document.querySelector('.catalog-prev');
+  const tiles = [...document.querySelectorAll('.catalog-tile')];
+  const visible = 2;
+  let index = 0;
+
+  function stepPx() {
+    const tile = tiles[0];
+    const gap = parseFloat(getComputedStyle(tile).marginRight);
+    return tile.offsetWidth + gap;
+  }
+  function update(){
+    track.style.transform = `translateX(-${index * stepPx()}px)`;
+  }
+  next.addEventListener('click', () => {
+    if (index < tiles.length - visible) index++;
+    update();
+  });
+  prev.addEventListener('click', () => {
+    if (index > 0) index--;
+    update();
+  });
+  update();
+</script>
+
+</body>
+</html>
