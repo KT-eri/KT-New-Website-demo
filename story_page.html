@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>311 International Tool Worship Day | KING TONY</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --kt-blue: #0066CC;
+            --kt-blue-glow: #0066cc80;
+            --kt-dark: #050505;
+            /* 更深邃的黑 */
+            --kt-panel: #121212;
+            --kt-text: #f0f0f0;
+            --kt-text-muted: #888;
+        }
+
+        body {
+            background-color: var(--kt-dark);
+            color: var(--kt-text);
+            font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Typography Override */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .mono-text {
+            font-family: 'Roboto Mono', monospace;
+            color: var(--kt-blue);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        /* Cinematic Hero */
+        .hero-section {
+            height: 100vh;
+            /* 模擬活動頁的高對比暗黑風格 */
+            background: radial-gradient(circle at center, rgba(0, 102, 204, 0.15) 0%, rgba(5, 5, 5, 1) 70%),
+                url('https://www.kingtony.com/2026_Ktday/img/hero_banner.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.3) 0%, rgba(5, 5, 5, 0.5) 95%);
+        }
+
+        /* KT Blue Glow Elements */
+        .glow-line {
+            height: 2px;
+            width: 60px;
+            background: var(--kt-blue);
+            box-shadow: 0 0 10px var(--kt-blue);
+            margin: 20px auto;
+        }
+
+        .static-card {
+            background: var(--kt-panel);
+            /* 深灰背景 */
+            border: 1px solid #222;
+            border-left: 4px solid var(--kt-blue);
+            /* KT Blue 左邊條 */
+            height: 100%;
+            /* 讓高度在 Grid 內對齊 */
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .static-card:hover {
+            transform: translateY(-5px);
+            /* 電腦版 hover 效果 */
+            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.15);
+            /* 藍色光暈 */
+        }
+
+        /* Icon 樣式優化 */
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Buttons with Tech/Industrial Feel */
+        .btn-kt-primary {
+            background: transparent;
+            color: white;
+            border: 1px solid var(--kt-blue);
+            border-radius: 0;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-kt-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--kt-blue);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn-kt-primary:hover::before {
+            left: 0;
+        }
+
+        .btn-kt-primary:hover {
+            color: white;
+            box-shadow: 0 0 15px var(--kt-blue-glow);
+        }
+
+        /* Sticky Bar */
+        .sticky-bar {
+            background: rgba(18, 18, 18, 0.9);
+            border-top: 1px solid var(--kt-blue);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transform: translateY(100%);
+        }
+
+        /* Utility */
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .text-blue {
+            color: var(--kt-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero-section d-flex align-items-center justify-content-center">
+        <div class="hero-overlay"></div>
+        <div class="container text-center position-relative" style="z-index: 2;">
+            <div class="d-inline-block border border-primary px-3 py-1 mb-4 rounded-pill gs-reveal"
+                style="border-color: var(--kt-blue)!important; background: rgba(0,102,204,0.1);">
+                <span class="mono-text text-white">MARCH 11 | TOOL WORSHIP DAY</span>
+            </div>
+
+            <a href="https://www.kingtony.com/2026_Ktday/march11-tool-workship-day.php" style=" text-decoration: none;">
+                <h1 class="display-3 text-white mb-2 gs-reveal">THE STORY<br>OF <span class="text-blue">311</span></h1>
+            </a>
+
+            <div class="glow-line gs-reveal"></div>
+
+            <p class="lead text-white-50 gs-reveal px-3" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+                When tools are respected, they give something back.<br>
+                Clarity, confidence, and pride.
+            </p>
+
+            <div class="mt-5 gs-reveal">
+                <i class="fas fa-chevron-down text-blue fa-lg animate-bounce"></i>
+            </div>
+        </div>
+    </header>
+<section class="section-padding">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center gs-fade-up">
+                <h2 class="mb-2">WHY WE <span class="text-blue">RESPECT</span></h2>
+                <div class="glow-line" style="margin: 15px auto;"></div> </div>
+        </div>
+        
+        <div class="row g-4"> <div class="col-12 col-md-4 gs-fade-up">
+                <div class="static-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="icon-box">
+                            <i class="fas fa-bolt fa-2x text-blue"></i>
+                        </div>
+                        <!-- <span class="mono-text text-muted" style="opacity: 0.5;">01</span> -->
+                    </div>
+                    <h4 class="text-white mb-3">PERFORMANCE</h4>
+                    <p class="text-white-50 small mb-0" style="line-height: 1.6;">
+                        The smallest unit of real performance isn’t a process—it’s a tool. A good tool ensures effort isn’t wasted.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 gs-fade-up">
+                <div class="static-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="icon-box">
+                            <i class="fas fa-hand-holding fa-2x text-blue"></i>
+                        </div>
+                        <!-- <span class="mono-text text-muted" style="opacity: 0.5;">02</span> -->
+                    </div>
+                    <h4 class="text-white mb-3">EXTENSION</h4>
+                    <p class="text-white-50 small mb-0" style="line-height: 1.6;">
+                        Tools are the extension of human intent. They bridge the gap between what you think and what you create.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 gs-fade-up">
+                <div class="static-card p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div class="icon-box">
+                            <i class="fas fa-medal fa-2x text-blue"></i>
+                        </div>
+                        <!-- <span class="mono-text text-muted" style="opacity: 0.5;">03</span> -->
+                    </div>
+                    <h4 class="text-white mb-3">DIGNITY</h4>
+                    <p class="text-white-50 small mb-0" style="line-height: 1.6;">
+                        To respect tools is to respect professional craftsmanship and the dignity of work itself.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section class="section-padding bg-black position-relative">
+        <div
+            style="position: absolute; right: -100px; top: 20%; width: 300px; height: 300px; background: var(--kt-blue); filter: blur(150px); opacity: 0.2;">
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 mb-4 gs-image-reveal">
+                    <img src="https://www.kingtony.com/2026_Ktday/img/WE DESIGN.png" class="img-fluid"
+                        style="filter: grayscale(100%); width: 100%;">
+                </div>
+                <div class="col-12 gs-text-reveal">
+                    <p class="mono-text mb-2">KING TONY PROMISE</p>
+                    <h2 class="mb-4">WE DESIGN <br>PARTNERS.</h2>
+                    <p class="text-white-50">
+                        Tool Day isn’t about honoring objects—it’s about celebrating the relationship between you and
+                        the tools you trust.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding text-center container">
+        <div class="p-5 border border-secondary position-relative overflow-hidden gs-fade-up"
+            style="background: #0a0a0a;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--kt-blue);">
+            </div>
+
+            <h2 class="mb-3">JOIN THE <span class="text-blue">311</span> SEASON</h2>
+            <p class="text-white-50 mb-4">Explore the collection and events in your region.</p>
+
+            <a href="#" id="dynamic-social-btn" class="btn btn-kt-primary btn-lg">
+                <i class="fab fa-facebook-f me-2"></i> Explore Collection
+            </a>
+
+            <p class="mt-3 mono-text small text-muted">
+                <i class="fas fa-map-marker-alt me-1"></i> DETECTED REGION: <span id="user-region"
+                    class="text-white">LOCATING...</span>
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center border-top border-secondary bg-black">
+        <div class="container">
+            <p class="small text-muted">WORK IS COMPLEX. YOUR TOOLS SHOULDN'T BE.</p>
+            <img src="https://www.kingtony.com/images/logo.png" alt="King Tony"
+                style="height: 30px; opacity: 0.5; filter: grayscale(100%);">
+        </div>
+    </footer>
+
+    <div class="sticky-bar fixed-bottom p-3 d-flex justify-content-between align-items-center">
+        <div>
+            <span class="d-block mono-text" style="font-size: 0.7rem;">311 DAY</span>
+            <span class="fw-bold text-white small">International Tool Worship</span>
+        </div>
+        <button onclick="document.getElementById('dynamic-social-btn').click()" class="btn btn-sm btn-primary rounded-0"
+            style="background: var(--kt-blue); border: none;">
+            JOIN NOW
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+    <script>
+        // --- 1. GEO-LOCATION LOGIC (社群導流核心) ---
+
+        // 設定各國社群連結 (請替換為實際連結)
+        const socialLinks = {
+            "TW": "https://www.facebook.com/KingTonyTaiwan", // 台灣
+            "US": "https://www.facebook.com/KingTonyUSA",    // 美國
+            "FR": "https://www.facebook.com/KingTonyFrance", // 法國
+            "DE": "https://www.facebook.com/KingTonyGermany",// 德國
+            "ES": "https://www.facebook.com/KingTonySpain",  // 西班牙
+            "PL": "https://www.facebook.com/KingTonyPolska", // 波蘭
+            "VN": "https://www.facebook.com/KingTonyVietnam",// 越南
+            "TH": "https://www.facebook.com/KingTonyThailand",// 泰國
+            "ID": "https://www.facebook.com/KingTonyIndonesia",// 印尼
+            "MY": "https://www.facebook.com/KingTonyMalaysia", // 馬來西亞
+            "RU": "https://vk.com/kingtony_rus",             // 俄羅斯 (範例)
+            "BR": "https://www.facebook.com/KingTonyBrasil",   // 巴西
+            "MX": "https://www.facebook.com/KingTonyMexico",   // 墨西哥
+            "GLOBAL": "https://www.facebook.com/KingTonyGlobal" // 全球預設
+        };
+
+        const btn = document.getElementById('dynamic-social-btn');
+        const regionLabel = document.getElementById('user-region');
+
+        // 使用免費 API 獲取使用者 IP 資訊
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                const countryCode = data.country_code; // 例如 "TW", "US"
+                console.log("User detected in:", countryCode);
+
+                // 更新文字顯示 (可選)
+                regionLabel.innerText = data.country_name.toUpperCase();
+
+                // 判斷連結
+                if (socialLinks[countryCode]) {
+                    btn.href = socialLinks[countryCode];
+                } else {
+                    btn.href = socialLinks["GLOBAL"];
+                    regionLabel.innerText += " (GLOBAL SITE)";
+                }
+            })
+            .catch(error => {
+                console.error('Geo-location failed:', error);
+                // 失敗時回退到全球網址
+                btn.href = socialLinks["GLOBAL"];
+                regionLabel.innerText = "GLOBAL";
+            });
+
+
+        // --- 2. ANIMATION LOGIC (GSAP) ---
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Reveal
+        const tl = gsap.timeline();
+        tl.from(".gs-reveal", { y: 30, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out" });
+
+        // Cards Stagger
+        gsap.from(".scrolling-card", {
+            scrollTrigger: { trigger: ".scrolling-wrapper", start: "top 85%" },
+            x: 50, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
+        });
+
+        // Image Reveal
+        gsap.from(".gs-image-reveal", {
+            scrollTrigger: { trigger: ".gs-image-reveal", start: "top 75%" },
+            scale: 0.95, opacity: 0, duration: 1, ease: "expo.out"
+        });
+
+        // Text Fade Up
+        gsap.utils.toArray('.gs-fade-up').forEach(element => {
+            gsap.from(element, {
+                scrollTrigger: { trigger: element, start: "top 85%" },
+                y: 30, opacity: 0, duration: 0.8
+            });
+        });
+
+        // Sticky Bar
+        gsap.to(".sticky-bar", {
+            scrollTrigger: { trigger: ".hero-section", start: "bottom top", toggleActions: "play none none reverse" },
+            y: 0, duration: 0.4
+        });
+    </script>
+</body>
+
+</html>

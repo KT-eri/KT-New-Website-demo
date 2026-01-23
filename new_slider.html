@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA Style Slider - Final Production</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css">
+    <style>
+        :root {
+            --ikea-blue: #006eba;
+            --bg-gray: #f5f5f5;
+            --thumb-width: 25%; /* 初始設定 */
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: "Noto Sans TC", -apple-system, sans-serif;
+            background-color: #fff;
+        }
+
+        /* 外層容器：確保高度佔滿以利於 Grid 100% 填充 */
+        .slider-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slider-main {
+            flex-grow: 1;
+            min-height: 0;
+            position: relative;
+        }
+
+        /* 響應式切換：嚴格控制避免同時出現 */
+        .desktop-only, .mobile-only { display: none; }
+        @media (min-width: 992px) { .desktop-only { display: block; } }
+        @media (max-width: 991px) { .mobile-only { display: block; } }
+
+        /* 100% 佔滿長高的 Grid 設定 */
+        .keen-slider { height: 100%; width: 100%; }
+        .grid-5, .grid-3 {
+            display: grid;
+            gap: 12px;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* 桌機排版 (4 Slides) */
+        .grid-5 {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr;
+        }
+        .box-lg { grid-column: span 2; grid-row: span 2; }
+        /* 最後一頁 50% 佔位 */
+        .box-16 { grid-column: 1 / 3; grid-row: 1 / 2; }
+        .box-17 { grid-column: 1 / 3; grid-row: 2 / 3; }
+
+        /* 手機排版 (6 Slides) */
+        .grid-3 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1.5fr 1fr;
+        }
+        .m-top { grid-column: span 2; }
+        .m-last { grid-column: span 2; }
+
+        /* 產品區塊樣式 */
+        .keen-slider__slide a {
+            background-color: var(--bg-gray);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+            font-size: 1.25rem;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+            box-sizing: border-box;
+        }
+        .keen-slider__slide a:hover {
+            background-color: #e8e8e8;
+        }
+
+        /* 進度條 (卷軸) 樣式 */
+        .controls {
+            margin-top: 30px;
+            position: relative;
+            height: 4px;
+            background: #eee;
+            border-radius: 2px;
+        }
+
+        .ikea-range {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            appearance: none;
+            background: transparent;
+            margin: 0;
+            height: 4px;
+            cursor: pointer;
+            outline: none;
+            z-index: 10;
+        }
+
+        /* 藍色滑塊客製化 */
+        .ikea-range::-webkit-slider-thumb {
+            appearance: none;
+            height: 4px;
+            width: var(--thumb-width);
+            background: var(--ikea-blue);
+            border: none;
+            border-radius: 2px;
+        }
+        .ikea-range::-moz-range-thumb {
+            height: 4px;
+            width: var(--thumb-width);
+            background: var(--ikea-blue);
+            border: none;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider-wrapper">
+    <div class="slider-main">
+        <div id="slider-desktop" class="keen-slider desktop-only">
+            <div class="keen-slider__slide grid-5"><a href="#" class="box-lg">類別 01</a><a href="#">02</a><a href="#">03</a><a href="#">04</a><a href="#">05</a></div>
+            <div class="keen-slider__slide grid-5"><a href="#" class="box-lg">類別 06</a><a href="#">07</a><a href="#">08</a><a href="#">09</a><a href="#">10</a></div>
+            <div class="keen-slider__slide grid-5"><a href="#" class="box-lg">類別 11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a></div>
+            <div class="keen-slider__slide grid-5"><a href="#" class="box-16">類別 16</a><a href="#" class="box-17">類別 17</a></div>
+        </div>
+
+        <div id="slider-mobile" class="keen-slider mobile-only">
+            <div class="keen-slider__slide grid-3"><a href="#" class="m-top">01</a><a href="#">02</a><a href="#">03</a></div>
+            <div class="keen-slider__slide grid-3"><a href="#" class="m-top">04</a><a href="#">05</a><a href="#">06</a></div>
+            <div class="keen-slider__slide grid-3"><a href="#" class="m-top">07</a><a href="#">08</a><a href="#">09</a></div>
+            <div class="keen-slider__slide grid-3"><a href="#" class="m-top">10</a><a href="#">11</a><a href="#">12</a></div>
+            <div class="keen-slider__slide grid-3"><a href="#" class="m-top">13</a><a href="#">14</a><a href="#">15</a></div>
+            <div class="keen-slider__slide grid-3"><a href="#" class="m-top">16</a><a href="#" class="m-last">17</a></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <input type="range" min="0" max="1000" value="0" id="slider-progress" class="ikea-range">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.js"></script>
+<script>
+    const progressInput = document.getElementById("slider-progress");
+    let sliderInstance = null;
+    let isDraggingBar = false;
+    let totalSlides = 4;
+
+    function initSlider() {
+        // 清除舊實例
+        if (sliderInstance) sliderInstance.destroy();
+
+        const isDesktop = window.innerWidth >= 992;
+        const selector = isDesktop ? "#slider-desktop" : "#slider-mobile";
+        totalSlides = isDesktop ? 4 : 6;
+
+        // 更新滑塊寬度 CSS 變數
+        document.documentElement.style.setProperty('--thumb-width', (100 / totalSlides) + '%');
+
+        sliderInstance = new KeenSlider(selector, {
+            slides: { perView: 1, spacing: 20 },
+            detailsChanged: (s) => {
+                // 滑動圖片時同步更新進度條（僅在非拖動狀態下）
+                if (!isDraggingBar) {
+                    const maxIdx = totalSlides - 1;
+                    const progress = s.track.details.abs / maxIdx;
+                    progressInput.value = Math.max(0, Math.min(1000, progress * 1000));
+                }
+            }
+        });
+    }
+
+    // 監聽進度條拖動事件
+    progressInput.addEventListener("mousedown", () => { isDraggingBar = true; });
+    progressInput.addEventListener("touchstart", () => { isDraggingBar = true; });
+
+    progressInput.addEventListener("input", (e) => {
+        if (!sliderInstance) return;
+        const ratio = parseFloat(e.target.value) / 1000;
+        const maxIdx = totalSlides - 1;
+        // 將 0~1 的比例精確映射到 Slide 索引 (0 ~ 3 或 0 ~ 5)
+        sliderInstance.track.to(ratio * maxIdx, { duration: 0 });
+    });
+
+    const endDrag = () => {
+        isDraggingBar = false;
+        // 放開後自動吸附到最近的一頁
+        if (sliderInstance) {
+            const currentIdx = Math.round(sliderInstance.track.details.abs);
+            sliderInstance.moveToIdx(currentIdx);
+        }
+    };
+
+    window.addEventListener("mouseup", endDrag);
+    window.addEventListener("touchend", endDrag);
+
+    // 視窗 Resize 防抖處理
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(initSlider, 250);
+    });
+
+    // 初始載入
+    window.addEventListener("load", initSlider);
+</script>
+</body>
+</html>
