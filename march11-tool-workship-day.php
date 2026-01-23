@@ -963,12 +963,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
   </div>
   <div class="hero-btn" style="display: flex; flex-flow: column nowrap; gap: 24px;">
+<<<<<<< HEAD
     <a href="https://www.kingtony.com/2026_Ktday/story_page.html" data-i18n="view-products" class="zz-btn zz-btn-primary zz-btn-wide">Explore the Season</a>
     <!-- 僅在手機版顯示 (小於 768px)，維持原有的 zz-btn-text -->
     <a href="https://www.kingtony.com/about3.php" data-i18n="explore-stores" class="zz-btn zz-btn-text zz-mobile-only">Why is KING TONY</a>
     
     <!-- 僅在平板以上顯示 (大於等於 768px)，切換為 zz-btn-white -->
     <a href="https://www.kingtony.com/about3.php" data-i18n="explore-stores" class="zz-btn zz-btn-white zz-btn-wide zz-desktop-only">Why is KING TONY</a>
+=======
+    <a href="https://www.kingtony.com/2026_Ktday/story_page.html" data-i18n="season" class="zz-btn zz-btn-primary zz-btn-wide">Explore the Season</a>
+    <!-- 僅在手機版顯示 (小於 768px)，維持原有的 zz-btn-text -->
+    <a href="https://www.kingtony.com/about3.php?utm_source=311-Activity&utm_medium=btn" data-i18n="why" class="zz-btn zz-btn-text zz-mobile-only">Why is KING TONY</a>
+    
+    <!-- 僅在平板以上顯示 (大於等於 768px)，切換為 zz-btn-white -->
+    <a href="https://www.kingtony.com/about3.php?utm_source=311-Activity&utm_medium=btn" data-i18n="why" class="zz-btn zz-btn-white zz-btn-wide zz-desktop-only">Why is KING TONY</a>
+>>>>>>> 7e08883 (set utms)
 
     <!-- <a href="/products" style="padding: 14px 32px; background: #006EBA; color: #fff; border-radius:25px; text-decoration: none; font-size: 1rem; font-weight: 500; transition: background 0.2s;">View Products</a>
     <a href="/contact" style="padding: 14px 32px; background: #194bb5; color: #fff; border-radius: 25px; text-decoration: none; font-size: 1rem; font-weight: 500; transition: background 0.2s;">Contact Us</a> -->
@@ -984,7 +993,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="zz-item-lg" style="background-color: var(--zz-blue); height: 100%; display: flex; align-items: center; justify-content: center;">
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"> 
               <h1 data-i18n="new-items" style="margin-bottom: 15px;">NEW ITEMS</h1>
+<<<<<<< HEAD
               <a href="https://www.kingtony.com/product_new.php?utm_source=KT-Web-Head-en&amp;utm_medium=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
+=======
+              <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
+>>>>>>> 7e08883 (set utms)
             </div>
           </div>
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
@@ -1019,7 +1032,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="zz-item-m-main zz-item-box" style="background-color: rgba(0, 110, 186, 0.8); height: 100%; display: flex; align-items: center; justify-content: center; ">
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"> 
             <h1 class="new-items" data-i18n="new-items" style="margin-bottom: 20px;">NEW ITEMS</h1>
+<<<<<<< HEAD
              <a href="https://www.kingtony.com/product_new.php?utm_source=KT-Web-Head-en&amp;utm_medium=Newproduct" data-i18n="learn-more" class="new-items-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
+=======
+             <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="new-items-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
+>>>>>>> 7e08883 (set utms)
            </div>
            </div>
              <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
@@ -1065,7 +1082,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="stores-content">
         <h1 class="our-stores" data-i18n="our-stores">Our <br> Locations</h1>
         <p style="max-width: 600px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="stores-description">
+<<<<<<< HEAD
           are located all over the world; you can find <a href="https://www.kingtony.com/dstribution.php?utm_source=KT-Web-Head-en&utm_medium=Distribution" class="our-locations-link zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">our presence</a> in America, Europe, Africa, the Middle East, Asia, and the Oceania.
+=======
+          are located all over the world; you can find <a href="https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution" class="our-locations-link zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">our presence</a> in America, Europe, Africa, the Middle East, Asia, and the Oceania.
+>>>>>>> 7e08883 (set utms)
         </p>
       </div>
       <div class="countries" style="width: 100%; background-color: rgba(24, 27, 29, 0.6);">
@@ -1076,14 +1097,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <section class="support" style="display: flex; flex-direction: column; background-color: rgba(0, 110, 186, 0.6); align-items: start; justify-content: center; color: white; ">
               <h1 class="reliable-support" data-i18n="reliable-support">Reliable<br>Support</h1>
               <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="support-description">
+<<<<<<< HEAD
                 built for professionals. Backed by <a href="https://www.kingtony.com/support.php?utm_source=KT-Web-Head-en&utm_medium=Support" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">support</a> you can rely on—anytime.</p>
                   <a href="https://www.kingtony.com/support.php?utm_source=KT-Web-Head-en&utm_medium=Support" data-i18n="learn-more" class="reliable-support-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
+=======
+                built for professionals. Backed by <a href="https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">support</a> you can rely on—anytime.</p>
+                  <a href="https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support" data-i18n="learn-more" class="reliable-support-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
+>>>>>>> 7e08883 (set utms)
   </section>
             
   <section class="join-us" style="display: flex; flex-direction: column; background-color: rgba(0, 0, 0, 0.8); align-items: start; justify-content: center; color: white;">
               <h1 class="joinUs" data-i18n="join-us">JOIN US</h1>
+<<<<<<< HEAD
       <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="join-description">the <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=KT-Web-Footer-en&utm_medium=FB_link" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">KING TONY Community</a>, be part of our journey and grow with KING TONY—where professionals come together.</p>
               <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=KT-Web-Footer-en&utm_medium=FB_link" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
+=======
+      <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="join-description">the <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">KING TONY Community</a>, be part of our journey and grow with KING TONY—where professionals come together.</p>
+              <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
+>>>>>>> 7e08883 (set utms)
   </section>
 </div>
 </div>
