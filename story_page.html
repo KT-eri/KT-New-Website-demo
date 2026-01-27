@@ -7,6 +7,34 @@
     <title>311 International Tool Worship Day | KING TONY</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Analytics gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44TSSY65Z5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-44TSSY65Z5'); // 請將 G-XXXXXXXXXX 換成你的 GA4 追蹤ID
+    </script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '234223867329780');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=234223867329780&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
     <link
         href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap"
         rel="stylesheet">
@@ -148,6 +176,7 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             transform: translateY(100%);
+            width: 100%;
         }
 
         /* Utility */
@@ -162,7 +191,11 @@
 </head>
 
 <body>
-
+    <nav class="position-fixed top-0 start-0 w-100 p-4 d-flex justify-content-start shadow"
+        style="z-index: 1000; background-color: #000;">
+        <img src="https://www.kingtony.com/2026_Ktday/img/KT%20logo-03.png" alt="KING TONY" class="site-logo gs-logo-reveal"
+            style="height: 50px; filter: brightness(0) invert(1);">
+    </nav>
     <header class="hero-section d-flex align-items-center justify-content-center">
         <div class="hero-overlay"></div>
         <div class="container text-center position-relative" style="z-index: 2;">
@@ -187,62 +220,66 @@
             </div>
         </div>
     </header>
-<section class="section-padding">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center gs-fade-up">
-                <h2 class="mb-2">WHY WE <span class="text-blue">RESPECT</span></h2>
-                <div class="glow-line" style="margin: 15px auto;"></div> </div>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center gs-fade-up">
+                    <h2 class="mb-2">WHY WE <span class="text-blue">RESPECT</span></h2>
+                    <div class="glow-line" style="margin: 15px auto;"></div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4 gs-fade-up">
+                    <div class="static-card p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="icon-box">
+                                <i class="fas fa-bolt fa-2x text-blue"></i>
+                            </div>
+                            <!-- <span class="mono-text text-muted" style="opacity: 0.5;">01</span> -->
+                        </div>
+                        <h4 class="text-white mb-3">PERFORMANCE</h4>
+                        <p class="text-white-50 small mb-0" style="line-height: 1.6;">
+                            The smallest unit of real performance isn’t a process—it’s a tool. A good tool ensures
+                            effort isn’t wasted.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 gs-fade-up">
+                    <div class="static-card p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="icon-box">
+                                <i class="fas fa-hand-holding fa-2x text-blue"></i>
+                            </div>
+                            <!-- <span class="mono-text text-muted" style="opacity: 0.5;">02</span> -->
+                        </div>
+                        <h4 class="text-white mb-3">EXTENSION</h4>
+                        <p class="text-white-50 small mb-0" style="line-height: 1.6;">
+                            Tools are the extension of human intent. They bridge the gap between what you think and what
+                            you create.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 gs-fade-up">
+                    <div class="static-card p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div class="icon-box">
+                                <i class="fas fa-medal fa-2x text-blue"></i>
+                            </div>
+                            <!-- <span class="mono-text text-muted" style="opacity: 0.5;">03</span> -->
+                        </div>
+                        <h4 class="text-white mb-3">DIGNITY</h4>
+                        <p class="text-white-50 small mb-0" style="line-height: 1.6;">
+                            To respect tools is to respect professional craftsmanship and the dignity of work itself.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        
-        <div class="row g-4"> <div class="col-12 col-md-4 gs-fade-up">
-                <div class="static-card p-4">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <div class="icon-box">
-                            <i class="fas fa-bolt fa-2x text-blue"></i>
-                        </div>
-                        <!-- <span class="mono-text text-muted" style="opacity: 0.5;">01</span> -->
-                    </div>
-                    <h4 class="text-white mb-3">PERFORMANCE</h4>
-                    <p class="text-white-50 small mb-0" style="line-height: 1.6;">
-                        The smallest unit of real performance isn’t a process—it’s a tool. A good tool ensures effort isn’t wasted.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 gs-fade-up">
-                <div class="static-card p-4">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <div class="icon-box">
-                            <i class="fas fa-hand-holding fa-2x text-blue"></i>
-                        </div>
-                        <!-- <span class="mono-text text-muted" style="opacity: 0.5;">02</span> -->
-                    </div>
-                    <h4 class="text-white mb-3">EXTENSION</h4>
-                    <p class="text-white-50 small mb-0" style="line-height: 1.6;">
-                        Tools are the extension of human intent. They bridge the gap between what you think and what you create.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4 gs-fade-up">
-                <div class="static-card p-4">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <div class="icon-box">
-                            <i class="fas fa-medal fa-2x text-blue"></i>
-                        </div>
-                        <!-- <span class="mono-text text-muted" style="opacity: 0.5;">03</span> -->
-                    </div>
-                    <h4 class="text-white mb-3">DIGNITY</h4>
-                    <p class="text-white-50 small mb-0" style="line-height: 1.6;">
-                        To respect tools is to respect professional craftsmanship and the dignity of work itself.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
     <section class="section-padding bg-black position-relative">
         <div
@@ -276,7 +313,8 @@
             <h2 class="mb-3">JOIN THE <span class="text-blue">311</span> SEASON</h2>
             <p class="text-white-50 mb-4">Explore the collection and events in your region.</p>
 
-            <a href="#" id="dynamic-social-btn" class="btn btn-kt-primary btn-lg">
+            <a href="https://www.facebook.com/KingTonyTool/?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link"
+                target="_blank" id="dynamic-social-btn" class="btn btn-kt-primary btn-lg">
                 <i class="fab fa-facebook-f me-2"></i> Explore Collection
             </a>
 
@@ -287,15 +325,15 @@
         </div>
     </section>
 
-    <footer class="py-5 text-center border-top border-secondary bg-black">
-        <div class="container">
+    <footer class="py-5 text-center border-top border-secondary bg-black" style="min-width: 320px;">
+        <div class="container" style="width: 100%;">
             <p class="small text-muted">WORK IS COMPLEX. YOUR TOOLS SHOULDN'T BE.</p>
             <img src="https://www.kingtony.com/images/logo.png" alt="King Tony"
                 style="height: 30px; opacity: 0.5; filter: grayscale(100%);">
         </div>
     </footer>
 
-    <div class="sticky-bar fixed-bottom p-3 d-flex justify-content-between align-items-center">
+    <div class="sticky-bar fixed-bottom p-3 d-flex justify-content-between align-items-center" style="min-width: 320px;">
         <div>
             <span class="d-block mono-text" style="font-size: 0.7rem;">311 DAY</span>
             <span class="fw-bold text-white small">International Tool Worship</span>
@@ -315,7 +353,7 @@
 
         // 設定各國社群連結 (請替換為實際連結)
         const socialLinks = {
-            "TW": "https://www.facebook.com/KingTonyTaiwan", // 台灣
+            "TW": "https://www.facebook.com/kingtony.co/", // 台灣
             "US": "https://www.facebook.com/KingTonyUSA",    // 美國
             "FR": "https://www.facebook.com/KingTonyFrance", // 法國
             "DE": "https://www.facebook.com/KingTonyGermany",// 德國
@@ -328,7 +366,7 @@
             "RU": "https://vk.com/kingtony_rus",             // 俄羅斯 (範例)
             "BR": "https://www.facebook.com/KingTonyBrasil",   // 巴西
             "MX": "https://www.facebook.com/KingTonyMexico",   // 墨西哥
-            "GLOBAL": "https://www.facebook.com/KingTonyGlobal" // 全球預設
+            "GLOBAL": "https://www.facebook.com/KingTonyTool/" // 全球預設
         };
 
         const btn = document.getElementById('dynamic-social-btn');
@@ -366,6 +404,15 @@
 
         // Hero Reveal
         const tl = gsap.timeline();
+
+        // --- 新增這一段 ---
+        tl.from(".gs-logo-reveal", {
+            y: -30,       // 從上方滑入
+            opacity: 0,   // 從透明變實體
+            duration: 1,
+            ease: "power3.out"
+        }, 0); // "0" 代表跟時間軸一開始同時發生
+
         tl.from(".gs-reveal", { y: 30, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out" });
 
         // Cards Stagger

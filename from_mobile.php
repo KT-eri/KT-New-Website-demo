@@ -45,402 +45,401 @@
   gtag('config', 'UA-20393607-3');
 </script>
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N87BGD4');</script>
-<!-- End Google Tag Manager -->
-<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
-    Weglot.initialize({
-        api_key: 'wg_8b26dbdd41cc53bef6321887bbf75cef2'
-    });
-</script>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '234223867329780');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=234223867329780&ev=PageView&noscript=1"
-/></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N87BGD4');</script>
+  <!-- End Google Tag Manager -->
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+      Weglot.initialize({
+          api_key: 'wg_8b26dbdd41cc53bef6321887bbf75cef2'
+      });
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '234223867329780');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=234223867329780&ev=PageView&noscript=1"
+  /></noscript>
 <!-- End Facebook Pixel Code -->
  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ab4c431a5f1b810da33195f3a/e153ebdc871c0376ce0e5cd62.js");</script>
 <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    
-  .autocomplete-suggestions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #999; background: #fff; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); cursor: pointer; }
-  .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
-  .autocomplete-no-suggestion { padding: 2px 5px;}
-  .autocomplete-selected { background: #fff; }
-  .autocomplete-suggestions strong { font-weight: bold; color: #F00; }
-  .autocomplete-group { padding: 2px 5px; }
-  .autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      
+    .autocomplete-suggestions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #999; background: #fff; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); cursor: pointer; }
+    .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+    .autocomplete-no-suggestion { padding: 2px 5px;}
+    .autocomplete-selected { background: #fff; }
+    .autocomplete-suggestions strong { font-weight: bold; color: #F00; }
+    .autocomplete-group { padding: 2px 5px; }
+    .autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
 
-  @media (max-width: 767px) {
-    .hero-section,
-    .hero-content,
-    .hero-btn,
-    .below-sections,
-    .stores,
-    .support,
-    .join-us {
-      word-break: break-word;
-      overflow-wrap: anywhere;
+    @media (max-width: 767px) {
+      .hero-section,
+      .hero-content,
+      .hero-btn,
+      .below-sections,
+      .stores,
+      .support,
+      .join-us {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+      }
+      .hero-content h1,
+      .hero-description,
+      .hero-btn a,
+      .below-sections h1,
+      .stores-content,
+      .countries,
+      .support h1,
+      .support p,
+      .joinUs,
+      .join-us p {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        white-space: normal;
+      }
+      .hero-content,
+      .hero-description,
+      .hero-btn,
+      .stores-content,
+      .countries,
+      .support,
+      .join-us {
+        min-width: 0;
+        max-width: 100vw;
+        box-sizing: border-box;
+      }
+      .hero-content h1,
+      .hero-description p,
+      .support p,
+      .join-us p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding-right: 2vw;
+      }
     }
-    .hero-content h1,
-    .hero-description,
-    .hero-btn a,
-    .below-sections h1,
-    .stores-content,
-    .countries,
-    .support h1,
-    .support p,
-    .joinUs,
-    .join-us p {
-      word-break: break-word;
-      overflow-wrap: anywhere;
-      white-space: normal;
+  </style>
+  <style>
+    /* 預設隱藏所有語言 (針對舊有結構) */
+    .hero-description p:not([data-i18n]) { display: none; }
+
+    /* 確保帶有 data-i18n 的元素在對應語言下顯示 */
+    html[lang="zh-TW"] [data-i18n],
+    html[lang="en"] [data-i18n] { opacity: 1 !important; }
+
+    /* 預設顯示繁體中文 (或英文) */
+    html[lang="zh-Hant-TW"] .lang-zh,
+    html:not([lang]) .lang-zh { display: block; }
+
+    /* 根據 Weglot 切換後的 html lang 顯示對應內容 */
+    html[lang="en"] .lang-en { display: block; }
+    html[lang="ko"] .lang-ko { display: block; }
+    html[lang="ar"] .lang-ar { display: block; }
+    html[lang="hu"] .lang-hu { display: block; }
+    html[lang="pl"] .lang-pl { display: block; }
+    html[lang="br"] .lang-br { display: block; } /* 巴西葡語通常對應 pt-br 或 br */
+    html[lang="es"] .lang-es { display: block; }
+    html[lang="fr"] .lang-fr { display: block; }
+    html[lang="vi"] .lang-vi { display: block; }
+    html[lang="ru"] .lang-ru { display: block; }
+    html[lang="th"] .lang-th { display: block; }
+
+    /* 修正阿拉伯文排版 (從右至左) */
+    html[lang="ar"] .hero-section, html[lang="ar"] .below-sections { 
+      direction: rtl;
+      text-align: right; 
     }
-    .hero-content,
-    .hero-description,
-    .hero-btn,
-    .stores-content,
-    .countries,
-    .support,
-    .join-us {
-      min-width: 0;
-      max-width: 100vw;
-      box-sizing: border-box;
+  </style>
+  <style>
+    @media (max-width: 767px) {
+    .zz-desktop-only { display: none !important; }
+    /* .zz-mobile-only { display: inline-block !important; } */
+    body.custom-setting .nav_menu {
+      height: auto !important; /* 使用 auto 讓它依內容高度，或 unset */
+      min-height: 0;           /* 保險起見，防止有最小高度設定 */
     }
-    .hero-content h1,
-    .hero-description p,
-    .support p,
-    .join-us p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      padding-right: 2vw;
+    .hero-content {
+      width: 100% !important;
+      padding-top: 30%;
     }
-  }
-</style>
-<style>
-  /* 預設隱藏所有語言 (針對舊有結構) */
-  .hero-description p:not([data-i18n]) { display: none; }
 
-  /* 確保帶有 data-i18n 的元素在對應語言下顯示 */
-  html[lang="zh-TW"] [data-i18n],
-  html[lang="en"] [data-i18n] { opacity: 1 !important; }
+    .mutipleSlider {
+      margin: 20% 0;
+    }
+    .new-items {
+      font-size: 2.2rem;
+    }
+    .hero-section, .mutipleSlider {
+      padding: 0 5% !important;
+    }  
+    .below-sections {
+      display: flex;
+      flex-direction: column;
+    }
+    .stores, .support, .join-us {
+      flex-direction: column;
+      padding: 40px 10%;
+    }
+    .stores-content {
 
-  /* 預設顯示繁體中文 (或英文) */
-  html[lang="zh-Hant-TW"] .lang-zh,
-  html:not([lang]) .lang-zh { display: block; }
+    }
+    .our-stores, .reliable-support, .joinUs {
+      font-size: 3.5rem;
+    }
+    .countries {
+      height: 300px;
+      flex-grow: 1;
+      display: flex;
+    }
+    .additional-container {
+      flex-direction: column;
+      gap: 50px; 
+      margin-top: 50px;
+    } 
+    .support, .join {
+      flex-direction: column;
+      gap: 20px;
 
-  /* 根據 Weglot 切換後的 html lang 顯示對應內容 */
-  html[lang="en"] .lang-en { display: block; }
-  html[lang="ko"] .lang-ko { display: block; }
-  html[lang="ar"] .lang-ar { display: block; }
-  html[lang="hu"] .lang-hu { display: block; }
-  html[lang="pl"] .lang-pl { display: block; }
-  html[lang="br"] .lang-br { display: block; } /* 巴西葡語通常對應 pt-br 或 br */
-  html[lang="es"] .lang-es { display: block; }
-  html[lang="fr"] .lang-fr { display: block; }
-  html[lang="vi"] .lang-vi { display: block; }
-  html[lang="ru"] .lang-ru { display: block; }
-  html[lang="th"] .lang-th { display: block; }
+    }
+    }
 
-  /* 修正阿拉伯文排版 (從右至左) */
-  html[lang="ar"] .hero-section, html[lang="ar"] .below-sections { 
-    direction: rtl;
-    text-align: right; 
-  }
-</style>
+      /* RWD 平板尺寸 (768px 以上) */
+      @media (min-width: 768px) {
+        /* 測試樣式 */
 
-<style>
-  @media (max-width: 767px) {
-  .zz-desktop-only { display: none !important; }
-  /* .zz-mobile-only { display: inline-block !important; } */
-   body.custom-setting .nav_menu {
-    height: auto !important; /* 使用 auto 讓它依內容高度，或 unset */
-    min-height: 0;           /* 保險起見，防止有最小高度設定 */
-  }
-  .hero-content {
-     width: 100% !important;
-     padding-top: 30%;
-  }
+        .hero-content {
+          padding-top: 45% !important;
+        }
+        .hero-btn {
+          flex-flow: row nowrap !important;
+        }
+        .hero-content h1 {
+          width: 60%;
+        }
+        .hero-description {
+          width: 50%; 
+        }
+        .mutipleSlider {
+          margin: 12% 0;
+        }
+        .new-items {
+          font-size: 5rem;
+        }
+        .hero-section, .mutipleSlider {
+          padding: 0 5% !important;
+        } 
+        .zz-mobile-only { display: none !important; }
+        .zz-desktop-only { display: inline-flex !important; }
+        .below-sections {
+          flex-direction: column;
+          padding: 0 5% ;
+        }
+        .stores {
+          padding: 30px 3%;
+        }
+        .support, .join-us {
+          padding: 40px 10%;
+        }
+        .stores-content {
+          padding: 0 5%;
+        }
+        .our-stores {
+          font-size: 3.2rem;
+        }
+        .countries {
+          height: auto;
+          flex-grow: 1;
+          display: flex;
+        }
 
-  .mutipleSlider {
-    margin: 20% 0;
-  }
-  .new-items {
-    font-size: 2.2rem;
-  }
-  .hero-section, .mutipleSlider {
-    padding: 0 5% !important;
-  }  
-  .below-sections {
-    display: flex;
-    flex-direction: column;
-  }
-  .stores, .support, .join-us {
-    flex-direction: column;
-    padding: 40px 10%;
-  }
-  .stores-content {
+        .additional-container {
+          gap: 50px;
+          margin-top: 50px;
+        } 
 
-  }
-  .our-stores, .reliable-support, .joinUs {
-    font-size: 3.5rem;
-  }
-  .countries {
-    height: 300px;
-    flex-grow: 1;
-    display: flex;
-  }
-  .additional-container {
-    flex-direction: column;
-    gap: 50px; 
-    margin-top: 50px;
-  } 
-  .support, .join {
-    flex-direction: column;
-    gap: 20px;
+      }
 
-  }
-}
+      /* RWD 桌機尺寸 (1200px 以上) */
+      @media (min-width: 1200px) {
+        /* 測試樣式 */
+        .hero-content {
+          width: 50% !important;
+          /* background-color: rgba(255, 255, 255, 0.2); */
+          padding-top: 30% !important;
+          font-size: 1.3vw !important;
+        }
+        .hero-section {
+          padding: 0 5em !important;
+        }
 
-/* RWD 平板尺寸 (768px 以上) */
-@media (min-width: 768px) {
-  /* 測試樣式 */
+        .hero-section h1 {
+          font-size: 2vw !important;
+        }
+        .hero-section p {
+          font-size: 1.2vw !important;
+        }
+        .hero-section .zz-btn {
+          font-size: 1.1vw !important;
+          padding: 1vw 2.5vw !important;
+          min-width: 15vw !important;
+        } 
 
-  .hero-content {
-    padding-top: 45% !important;
-  }
-  .hero-btn {
-    flex-flow: row nowrap !important;
-  }
-  .hero-content h1 {
-    width: 60%;
-  }
-  .hero-description {
-    width: 50%; 
-  }
-  .mutipleSlider {
-    margin: 12% 0;
-  }
-  .new-items {
-    font-size: 5rem;
-  }
-  .hero-section, .mutipleSlider {
-    padding: 0 5% !important;
-  } 
-  .zz-mobile-only { display: none !important; }
-  .zz-desktop-only { display: inline-flex !important; }
-  .below-sections {
-    flex-direction: column;
-    padding: 0 5% ;
-  }
-  .stores {
-    padding: 30px 3%;
-  }
-  .support, .join-us {
-    padding: 40px 10%;
-  }
-  .stores-content {
-    padding: 0 5%;
-  }
-  .our-stores {
-    font-size: 3.2rem;
-  }
-  .countries {
-    height: auto;
-    flex-grow: 1;
-    display: flex;
-  }
+        .mutipleSlider {
+          margin: 8% 0;
+          min-width: none;
+          max-width: none !important;
+        }
+        .mutipleSlider h1 {
+          font-size: 2.5vw !important;
+        }
+        .mutipleSlider a {
+          font-size: 1.1vw !important;
+        }
+        .mutipleSlider .zz-btn {
+          padding: 1.2vw 1.2vw !important;
+          min-width: 10vw !important;
+        }
+        .mutipleSlider span {
+          font-size: 1.2vw !important;
+        }
+        .zz-slider-wrapper {
+          height: 33.33vw !important;
+        }
+      
+        .below-sections {
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 30px 10%;
+        }
+        .below-sections h1 {
+          font-size: 2.5vw !important;
+          line-height: 1.1 !important;
+        }
+        .additional-container {
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 50px;
+          margin-top: 0;
+          width: 48%;
+        } 
+        .stores {
+          flex-direction: column;
+          width: 48%;
+          padding: 2vw 5% !important;
+        }
+        .support, .join-us {
+          padding: 2vw 5% !important;
+        }
+        .stores p, .support p, .join-us p {
+          font-size: 1.1vw !important;
+          line-height: 1.6 !important;
+          margin: 2vw 0 !important;
+        }
+        .stores p {
+          max-width: 42vw !important;
+        }
+        .support p, .join-us p {
+          max-width: 28vw !important;
+        }
+        .stores .zz-btn, .support .zz-btn, .join-us .zz-btn {
+          font-size: 1.1vw !important;
+        }
+        .stores .zz-btn-outline, .support .zz-btn-outline, .join-us .zz-btn-outline {
+          padding: 1vw 2.5vw !important;
+          min-width: 12vw !important;
+          margin-top: 1vw !important;
+        }
+        
+      }
 
-  .additional-container {
-    gap: 50px;
-    margin-top: 50px;
-  } 
+      /* RWD 桌機尺寸 (1440px 以上) */
+      @media (min-width: 1440px) {
+        /* 測試樣式 */
+        .hero-content, .hero-btn {
+          /* background-color: rgba(255, 255, 255, 0.2); */
+        }
+        .mutipleSlider, .zz-slider-wrapper {
+          max-width: none !important;
+        }
+        .zz-slider-wrapper {
+          height: 33.33vw !important; /* 等比縮放 1440:480 */
+        }
+        /* Hero Section 縮放 */
+        .hero-section h1 {
+          font-size: 2vw !important;
+        }
+        .hero-section p {
+          font-size: 1.2vw !important;
+        }
+        .hero-section .zz-btn {
+          font-size: 1.1vw !important;
+          padding: 1vw 2.5vw !important;
+          min-width: 15vw !important;
+        }
+        .hero-content {
+          padding-top: 30% !important;
+        }
+        /* 內部元素等比縮放 */
+        .mutipleSlider h1 {
+          font-size: 2.5vw !important;
+        }
+        .mutipleSlider a {
+          font-size: 1.1vw !important;
+        }
+        .mutipleSlider .zz-btn {
+          padding: 1.2vw 1.2vw !important;
+          min-width: 10vw !important;
+        }
+        .mutipleSlider span {
+          font-size: 1.2vw !important;
+        }
 
-}
-
-/* RWD 桌機尺寸 (1200px 以上) */
-@media (min-width: 1200px) {
-  /* 測試樣式 */
-  .hero-content {
-    width: 50% !important;
-    /* background-color: rgba(255, 255, 255, 0.2); */
-    padding-top: 30% !important;
-    font-size: 1.3vw !important;
-  }
-  .hero-section {
-    padding: 0 5em !important;
-  }
-
-  .hero-section h1 {
-    font-size: 2vw !important;
-  }
-  .hero-section p {
-    font-size: 1.2vw !important;
-  }
-  .hero-section .zz-btn {
-    font-size: 1.1vw !important;
-    padding: 1vw 2.5vw !important;
-    min-width: 15vw !important;
-  } 
-
-   .mutipleSlider {
-    margin: 8% 0;
-    min-width: none;
-    max-width: none !important;
-  }
-  .mutipleSlider h1 {
-    font-size: 2.5vw !important;
-  }
-  .mutipleSlider a {
-    font-size: 1.1vw !important;
-  }
-  .mutipleSlider .zz-btn {
-    padding: 1.2vw 1.2vw !important;
-    min-width: 10vw !important;
-  }
-  .mutipleSlider span {
-    font-size: 1.2vw !important;
-  }
-  .zz-slider-wrapper {
-    height: 33.33vw !important;
-  }
- 
-  .below-sections {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 10%;
-  }
-  .below-sections h1 {
-    font-size: 2.5vw !important;
-    line-height: 1.1 !important;
-  }
-  .additional-container {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 0;
-    width: 48%;
-  } 
-   .stores {
-    flex-direction: column;
-    width: 48%;
-    padding: 2vw 5% !important;
-  }
-  .support, .join-us {
-    padding: 2vw 5% !important;
-  }
-  .stores p, .support p, .join-us p {
-    font-size: 1.1vw !important;
-    line-height: 1.6 !important;
-    margin: 2vw 0 !important;
-  }
-  .stores p {
-    max-width: 42vw !important;
-  }
-  .support p, .join-us p {
-    max-width: 28vw !important;
-  }
-  .stores .zz-btn, .support .zz-btn, .join-us .zz-btn {
-    font-size: 1.1vw !important;
-  }
-  .stores .zz-btn-outline, .support .zz-btn-outline, .join-us .zz-btn-outline {
-    padding: 1vw 2.5vw !important;
-    min-width: 12vw !important;
-    margin-top: 1vw !important;
-  }
-  
-}
-
-/* RWD 桌機尺寸 (1440px 以上) */
-@media (min-width: 1440px) {
-  /* 測試樣式 */
-  .hero-content, .hero-btn {
-    /* background-color: rgba(255, 255, 255, 0.2); */
-  }
-  .mutipleSlider, .zz-slider-wrapper {
-    max-width: none !important;
-  }
-  .zz-slider-wrapper {
-    height: 33.33vw !important; /* 等比縮放 1440:480 */
-  }
-  /* Hero Section 縮放 */
-  .hero-section h1 {
-    font-size: 2vw !important;
-  }
-  .hero-section p {
-    font-size: 1.2vw !important;
-  }
-  .hero-section .zz-btn {
-    font-size: 1.1vw !important;
-    padding: 1vw 2.5vw !important;
-    min-width: 15vw !important;
-  }
-  .hero-content {
-    padding-top: 30% !important;
-  }
-  /* 內部元素等比縮放 */
-  .mutipleSlider h1 {
-    font-size: 2.5vw !important;
-  }
-  .mutipleSlider a {
-    font-size: 1.1vw !important;
-  }
-  .mutipleSlider .zz-btn {
-    padding: 1.2vw 1.2vw !important;
-    min-width: 10vw !important;
-  }
-  .mutipleSlider span {
-    font-size: 1.2vw !important;
-  }
-
-  /* Stores, Support, Join-us 比例縮放 */
-  .stores, .support, .join-us {
-    padding: 2vw 5% !important;
-  }
-  .below-sections h1 {
-    font-size: 2.5vw !important;
-    line-height: 1.1 !important;
-  }
-  .stores p, .support p, .join-us p {
-    font-size: 1.1vw !important;
-    line-height: 1.6 !important;
-    margin: 2vw 0 !important;
-  }
-  .stores p {
-    max-width: 42vw !important;
-  }
-  .support p, .join-us p {
-    max-width: 28vw !important;
-  }
-  .stores .zz-btn, .support .zz-btn, .join-us .zz-btn {
-    font-size: 1.1vw !important;
-  }
-  .stores .zz-btn-outline, .support .zz-btn-outline, .join-us .zz-btn-outline {
-    padding: 1vw 2.5vw !important;
-    min-width: 12vw !important;
-    margin-top: 1vw !important;
-  }
-}
-</style>
+        /* Stores, Support, Join-us 比例縮放 */
+        .stores, .support, .join-us {
+          padding: 2vw 5% !important;
+        }
+        .below-sections h1 {
+          font-size: 2.5vw !important;
+          line-height: 1.1 !important;
+        }
+        .stores p, .support p, .join-us p {
+          font-size: 1.1vw !important;
+          line-height: 1.6 !important;
+          margin: 2vw 0 !important;
+        }
+        .stores p {
+          max-width: 42vw !important;
+        }
+        .support p, .join-us p {
+          max-width: 28vw !important;
+        }
+        .stores .zz-btn, .support .zz-btn, .join-us .zz-btn {
+          font-size: 1.1vw !important;
+        }
+        .stores .zz-btn-outline, .support .zz-btn-outline, .join-us .zz-btn-outline {
+          padding: 1vw 2.5vw !important;
+          min-width: 12vw !important;
+          margin-top: 1vw !important;
+        }
+      }
+  </style>
 </head>
 
 <body class="custom-setting" style="background-color: rgb(0, 0, 0); overflow-x: hidden;">

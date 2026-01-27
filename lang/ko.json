@@ -1,7 +1,7 @@
 {
   "current-lang": "한국어",
-  "hero-title": "KING TONY에 오신 것을 환영합니다",
-  "hero-description": "KING TONY는 세계적인 전문 공구 브랜드로, 전 세계 고객에게 고품질의 제품과 서비스를 제공하기 위해 최선을 다하고 있습니다.",
+  "hero-title": "3월 11일 | 국제 공구 숭배의 날",
+  "hero-description": "공구를 존중하고, 작업을 즐기세요. 공구를 존중할 때, 그것들은 보답합니다 — 명확성, 신뢰, 그리고 장인 정신의 자부심.",
   "view-products": "제품 보기",
   "explore-stores": "매장 찾기",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "프로모션 상품",
   "cat-19": "35주년 프로모션",
   "cat-20": "툴 페스티벌 프로모션",
+  "season": "시즌 탐색",
+  "why": "왜 KING TONY인가",
   "new-items": "신제품",
   "learn-more": "더 알아보기",
-  "our-stores": "매장 안내",
-  "stores-description": "전 세계에 위치하고 있습니다. 아메리카, 유럽, 아프리카, 중동, 아시아 및 오세아니아에서 <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>영업 거점</a>을 확인하실 수 있습니다.",
+  "our-stores": "우리의<br>위치",
+  "stores-description": "전 세계에 위치하고 있습니다. 아메리카, 유럽, 아프리카, 중동, 아시아 및 오세아니아에서 <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>영업 거점</a>을 확인하실 수 있습니다.",
   "countries": "국가",
-  "reliable-support": "신뢰할 수 있는 지원",
-  "support-description": "전문가들을 위해 제작되었습니다. 언제든 믿을 수 있는 <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>지원</a>이 뒷받침됩니다.",
+  "reliable-support": "진정한<br>지원",
+  "support-description": "전문가들을 위해 제작되었습니다. 언제든 믿을 수 있는 <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>지원</a>이 뒷받침됩니다.",
   "join-us": "함께하세요",
-  "join-description": "<a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>KING TONY 커뮤니티</a>에 가입하여 저희의 여정에 동참하고, 전문가들이 함께 모이는 KING TONY와 함께 성장하세요."
+  "join-description": "<a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>KING TONY 커뮤니티</a>에 가입하여 저희의 여정에 동참하고, 전문가들이 함께 모이는 KING TONY와 함께 성장하세요."
 }

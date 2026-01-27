@@ -1,7 +1,7 @@
 {
   "current-lang": "Русский",
-  "hero-title": "Добро пожаловать в KING TONY",
-  "hero-description": "KING TONY — всемирно известный бренд профессиональных инструментов, предлагающий высококачественную продукцию и сервис.",
+  "hero-title": "11 Марта | Международный День Поклонения Инструментам",
+  "hero-description": "Уважайте свои инструменты, наслаждайтесь работой. Когда инструменты уважают, они отвечают взаимностью — четкостью, уверенностью и гордостью за мастерство.",
   "view-products": "Смотреть продукцию",
   "explore-stores": "Где купить",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "Промо-товары",
   "cat-19": "Акция к 35-летию",
   "cat-20": "Фестиваль инструментов",
+  "season": "Откройте Сезон",
+  "why": "Почему KING TONY",
   "new-items": "НОВИНКИ",
   "learn-more": "Подробнее",
-  "our-stores": "Наш магазин",
-  "stores-description": "расположены по всему миру; вы можете найти <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>наше присутствие</a> в Америке, Европе, Африке, на Ближнем Востоке, в Азии и Океании.",
+  "our-stores": "Наши<br>Локации",
+  "stores-description": "По всему миру; вы можете найти <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>наше присутствие</a> в Америке, Европе, Африке, на Ближнем Востоке, в Азии и Океании.",
   "countries": "СТРАНЫ",
-  "reliable-support": "Надежная поддержка",
-  "support-description": "создано для профессионалов. Опираясь на <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>поддержку</a>, на которую вы можете положиться — в любое время.",
-  "join-us": "ПРИСОЕДИНЯЙТЕСЬ К НАМ",
-  "join-description": "к <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>сообществу KING TONY</a>, станьте частью нашего пути и растите вместе с KING TONY — там, где профессионалы собираются вместе."
+  "reliable-support": "Настоящая<br>Поддержка",
+  "support-description": "Сделано для профессионалов. Подкреплено <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>поддержкой</a>, на которую вы можете положиться — в любое время.",
+  "join-us": "Присоединяйтесь к Нам",
+  "join-description": "К <a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>сообществу KING TONY</a>, станьте частью нашего путешествия и растите вместе с KING TONY — где собираются профессионалы."
 }

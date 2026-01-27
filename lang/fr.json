@@ -1,7 +1,7 @@
 {
   "current-lang": "Français",
-  "hero-title": "Bienvenue chez KING TONY",
-  "hero-description": "KING TONY est une marque d'outillage professionnel de renommée mondiale, engagée à fournir des produits et services de haute qualité.",
+  "hero-title": "11 Mars | Journée Internationale de Culte des Outils",
+  "hero-description": "Respectez vos outils, appréciez votre travail. Quand les outils sont respectés, ils vous le rendent bien — clarté, confiance et fierté du savoir-faire.",
   "view-products": "Voir les produits",
   "explore-stores": "Nos distributeurs",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "Articles Promotionnels",
   "cat-19": "Promo 35ème Anniversaire",
   "cat-20": "Promo Festival de l'Outil",
+  "season": "Découvrez la Saison",
+  "why": "Pourquoi KING TONY",
   "new-items": "NOUVEAUTÉS",
   "learn-more": "En savoir plus",
-  "our-stores": "Nos points de vente",
-  "stores-description": "sont situés dans le monde entier ; vous pouvez trouver <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>notre présence</a> en Amérique, en Europe, en Afrique, au Moyen-Orient, en Asie et en Océanie.",
+  "our-stores": "Nos<br>Distributeurs",
+  "stores-description": "Dans le monde entier ; vous pouvez trouver <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>notre présence</a> en Amérique, en Europe, en Afrique, au Moyen-Orient, en Asie et en Océanie.",
   "countries": "PAYS",
-  "reliable-support": "Support fiable",
-  "support-description": "conçu pour les professionnels. Soutenu par un <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>support</a> sur lequel vous pouvez compter, à tout moment.",
-  "join-us": "REJOIGNEZ-NOUS",
-  "join-description": "la <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>communauté KING TONY</a>, faites partie de notre voyage et grandissez avec KING TONY — là où les professionnels se réunissent."
+  "reliable-support": "Support<br>Fiable",
+  "support-description": "Conçu pour les professionnels. Soutenu par un <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>support</a> sur lequel vous pouvez compter, à tout moment.",
+  "join-us": "Rejoignez-Nous",
+  "join-description": "À la <a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>Communauté KING TONY</a>, faites partie de notre voyage et grandissez avec KING TONY — là où les professionnels se réunissent."
 }

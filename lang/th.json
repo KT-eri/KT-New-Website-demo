@@ -1,7 +1,7 @@
 {
   "current-lang": "ไทย",
-  "hero-title": "ยินดีต้อนรับสู่ KING TONY",
-  "hero-description": "KING TONY แบรนด์เครื่องมือช่างระดับโลก มุ่งมั่นนำเสนอสินค้าและบริการคุณภาพสูงแด่ลูกค้าทั่วโลก",
+  "hero-title": "11 มีนาคม | วันเฉลิมฉลองเครื่องมือช่างสากล",
+  "hero-description": "เคารพเครื่องมือของคุณ เพลิดเพลินกับงานของคุณ เมื่อเครื่องมือได้รับการเคารพ พวกมันจะตอบแทน — ความชัดเจน, ความมั่นใจ และความภูมิใจในงานฝีมือ",
   "view-products": "ดูผลิตภัณฑ์",
   "explore-stores": "ค้นหาร้านค้า",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "สินค้าโปรโมชั่น",
   "cat-19": "โปรโมชั่นฉลอง 35 ปี",
   "cat-20": "โปรโมชั่น Tool Festival",
+  "season": "ค้นพบฤดูกาล",
+  "why": "ทำไมต้อง KING TONY",
   "new-items": "สินค้าใหม่",
   "learn-more": "เรียนรู้เพิ่มเติม",
-  "our-stores": "ร้านค้าของเรา",
-  "stores-description": "ตั้งอยู่ทั่วโลก คุณสามารถค้นหา <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>สาขาของเรา</a> ได้ในอเมริกา ยุโรป แอฟริกา ตะวันออกกลาง เอเชีย และโอเชียเนีย",
+  "our-stores": "ที่ตั้ง<br>ของเรา",
+  "stores-description": "ทั่วโลก; คุณสามารถค้นหา <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>สถานะของเรา</a> ในอเมริกา, ยุโรป, แอฟริกา, ตะวันออกกลาง, เอเชีย และโอเชียเนีย",
   "countries": "ประเทศ",
-  "reliable-support": "การสนับสนุนที่เชื่อถือได้",
-  "support-description": "สร้างขึ้นเพื่อมืออาชีพ ด้วยแรงผลักดันจาก <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>การสนับสนุน</a> ที่คุณวางใจได้ ทุกเวลา",
-  "join-us": "ร่วมงานกับเรา",
-  "join-description": "เข้าร่วม <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>ชุมชน KING TONY</a> เป็นส่วนหนึ่งของการเดินทางของเรา และเติบโตไปพร้อมกับ KING TONY พื้นที่ที่ผู้เชี่ยวชาญมารวมตัวกัน"
+  "reliable-support": "การสนับสนุน<br>ที่แท้จริง",
+  "support-description": "สร้างเพื่อมืออาชีพ สนับสนุนโดย <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>การสนับสนุน</a> ที่คุณวางใจได้ — ทุกเวลา",
+  "join-us": "เข้าร่วมกับเรา",
+  "join-description": "สู่ <a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>ชุมชน KING TONY</a>, เป็นส่วนหนึ่งของการเดินทางของเราและเติบโตไปกับ KING TONY — ที่ซึ่งมืออาชีพมาพบกัน"
 }

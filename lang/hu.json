@@ -1,7 +1,7 @@
 {
   "current-lang": "Magyar",
-  "hero-title": "Üdvözli a KING TONY",
-  "hero-description": "A KING TONY világhírű professzionális szerszámmárka, elkötelezett a minőségi termékek és szolgáltatások iránt.",
+  "hero-title": "Március 11 | A Szerszámok Imádatának Nemzetközi Napja",
+  "hero-description": "Tiszteld a szerszámaidat, élvezd a munkád. Ha a szerszámokat tisztelik, azok viszonozzák — tisztaság, bizalom és büszkeség a mesterségben.",
   "view-products": "Termékek megtekintése",
   "explore-stores": "Üzletek keresése",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "Promóciós Termékek",
   "cat-19": "35 Éves Évfordulós Akció",
   "cat-20": "Szerszámfesztivál Akció",
+  "season": "Fedezze fel a Szezont",
+  "why": "Miért a KING TONY",
   "new-items": "ÚJDONSÁGOK",
   "learn-more": "Tudjon meg többet",
-  "our-stores": "Üzletünk",
-  "stores-description": "a világ minden táján megtalálhatóak; megtalálhatja <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>jelenlétünket</a> Amerikában, Európában, Afrikában, a Közel-Keleten, Ázsiában és Óceániában.",
+  "our-stores": "Telephelyeink",
+  "stores-description": "Az egész világon; megtalálhatja <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>jelenlétünket</a> Amerikában, Európában, Afrikában, a Közel-Keleten, Ázsiában és Óceániában.",
   "countries": "ORSZÁG",
-  "reliable-support": "Megbízható támogatás",
-  "support-description": "szakembereknek készült. Olyan <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>támogatással</a> a háta mögött, amelyre bármikor számíthat.",
-  "join-us": "CSATLAKOZZ HOZZÁNK",
-  "join-description": "a <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>KING TONY közösséghez</a>, légy részese utazásunknak és fejlődj a KING TONY-val – ahol a szakemberek összefognak."
+  "reliable-support": "Valódi<br>Támogatás",
+  "support-description": "Profiknak készült. <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>Támogatással</a>, amelyre bármikor számíthat.",
+  "join-us": "Csatlakozzon Hozzánk",
+  "join-description": "A <a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>KING TONY Közösséghez</a>, legyen része utazásunknak és fejlődjön a KING TONY-val — ahol a szakemberek találkoznak."
 }

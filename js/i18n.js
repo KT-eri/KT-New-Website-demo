@@ -6,7 +6,7 @@ async function initI18n() {
     // 優先順序：URL 參數 > HTML lang 屬性 > LocalStorage > 瀏覽器語言 > 預設 en
     const urlParams = new URLSearchParams(window.location.search);
     const htmlLangAttr = document.documentElement.lang.toLowerCase();
-    const supportedLangs = ['ar', 'cn', 'en', 'es', 'fr', 'hu', 'ko', 'pl', 'br', 'ru', 'th', 'vi'];
+    const supportedLangs = ['ar', 'cn', 'en', 'es', 'fr', 'hu', 'ko', 'pl', 'br', 'ru', 'th', 'vi', 'jp'];
 
     let lang = urlParams.get('lang');
 
@@ -14,6 +14,7 @@ async function initI18n() {
     if (!lang) {
         if (htmlLangAttr.includes('zh')) lang = 'cn';
         else if (htmlLangAttr.includes('pt') || htmlLangAttr.includes('br')) lang = 'br';
+        else if (htmlLangAttr.includes('ja') || htmlLangAttr.includes('jp')) lang = 'jp';
         else {
             const short = htmlLangAttr.slice(0, 2);
             if (supportedLangs.includes(short)) lang = short;
@@ -34,6 +35,8 @@ async function initI18n() {
         lang = 'cn';
     } else if (lang.startsWith('pt') || lang.startsWith('br')) {
         lang = 'br';
+    } else if (lang.startsWith('ja') || lang.startsWith('jp')) {
+        lang = 'jp';
     } else {
         lang = lang.slice(0, 2);
     }

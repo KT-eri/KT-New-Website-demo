@@ -1,7 +1,7 @@
 {
   "current-lang": "Polski",
-  "hero-title": "Witamy w KING TONY",
-  "hero-description": "KING TONY to renomowana marka narzędzi profesjonalnych, dostarczająca produkty najwyższej jakości klientom na całym świecie.",
+  "hero-title": "11 Marca | Międzynarodowy Dzień Kultu Narzędzi",
+  "hero-description": "Szanuj swoje narzędzia, ciesz się swoją pracą. Gdy narzędzia są szanowane, odwdzięczają się — jasnością, pewnością siebie i dumą z rzemiosła.",
   "view-products": "Zobacz produkty",
   "explore-stores": "Znajdź sklep",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "Materiały Promocyjne",
   "cat-19": "Promocja na 35-lecie",
   "cat-20": "Festiwal Narzędzi",
+  "season": "Odkryj Sezon",
+  "why": "Dlaczego KING TONY",
   "new-items": "NOWOŚCI",
   "learn-more": "Więcej",
-  "our-stores": "Nasz sklep",
-  "stores-description": "znajdują się na całym świecie; możesz znaleźć <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>naszą obecność</a> w Ameryce, Europie, Afryce, na Bliskim Wschodzie, w Azji i Oceanii.",
+  "our-stores": "Nasze<br>Lokalizacje",
+  "stores-description": "Na całym świecie; możesz znaleźć <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>naszą obecność</a> w Ameryce, Europie, Afryce, na Bliskim Wschodzie, w Azji i Oceanii.",
   "countries": "KRAJE",
-  "reliable-support": "Niezawodne wsparcie",
-  "support-description": "stworzone dla profesjonalistów. Wspierane przez <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>wsparcie</a>, na którym możesz polegać — w każdej chwili.",
-  "join-us": "DOŁĄCZ DO NAS",
-  "join-description": "do <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>społeczności KING TONY</a>, bądź częścią naszej podróży i rozwijaj się z KING TONY — tam, gdzie profesjonaliści spotykają się razem."
+  "reliable-support": "Wsparcie<br>Prawdziwe",
+  "support-description": "Stworzone dla profesjonalistów. Wspierane przez <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>wsparcie</a>, na którym możesz polegać — w każdej chwili.",
+  "join-us": "Dołącz do Nas",
+  "join-description": "Do <a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>Społeczności KING TONY</a>, bądź częścią naszej podróży i rozwijaj się z KING TONY — tam, gdzie profesjonaliści spotykają się razem."
 }

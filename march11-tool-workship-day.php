@@ -9,15 +9,15 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="Author" content="艾傑網頁設計">
   <meta name="copyright" content="艾傑網頁設計公司 www.artware.com.tw @2016">
-  <meta name="keywords" content="20260311 testing, KING TONY">
-  <title>20260311 testing</title>
-  <meta name="description" content="">
-  <meta property="og:title" content="20260311 testing">
+  <meta name="keywords" content="International Tool Worship Day, KING TONY, 311, Tool Day">
+  <title>March 11 | International Tool Worship Day</title>
+  <meta name="description" content="Respect your tools, enjoy your work. When tools are respected, they give something back—clarity, confidence, and pride in craftsmanship.">
+  <meta property="og:title" content="March 11 | International Tool Worship Day">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.kingtony.com/promote/20260311-testing">
-  <meta property="og:image" content="https://www.kingtony.com/upload/products/.png">
-  <meta property="og:site_name" content="20260311 testing">
-  <meta property="og:description" content="">
+  <meta property="og:url" content="https://www.kingtony.com/promote/20260311-tool-worship-day">
+  <meta property="og:image" content="https://www.kingtony.com/2026_Ktday/img/share_img.jpg">
+  <meta property="og:site_name" content="KING TONY">
+  <meta property="og:description" content="Respect your tools, enjoy your work.">
   <link rel="icon" href="https://www.kingtony.com/images/favicon.png">
 
 
@@ -51,12 +51,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N87BGD4');</script>
 <!-- End Google Tag Manager -->
+<!-- 
 <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
 <script>
     Weglot.initialize({
         api_key: 'wg_8b26dbdd41cc53bef6321887bbf75cef2'
     });
-</script>
+</script> 
+-->
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -148,7 +150,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   html[lang="zh-Hant-TW"] .lang-zh,
   html:not([lang]) .lang-zh { display: block; }
 
-  /* 根據 Weglot 切換後的 html lang 顯示對應內容 */
+  /* 根據 語言切換後的 html lang 顯示對應內容 */
   html[lang="en"] .lang-en { display: block; }
   html[lang="ko"] .lang-ko { display: block; }
   html[lang="ar"] .lang-ar { display: block; }
@@ -160,6 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   html[lang="vi"] .lang-vi { display: block; }
   html[lang="ru"] .lang-ru { display: block; }
   html[lang="th"] .lang-th { display: block; }
+  html[lang="jp"] .lang-jp { display: block; }
 
   /* 修正阿拉伯文排版 (從右至左) */
   html[lang="ar"] .hero-section, html[lang="ar"] .below-sections { 
@@ -444,14 +447,131 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body class="custom-setting" style="background-color: rgb(0, 0, 0); overflow-x: hidden;">
-  <!-- <div class="gsap-marker-end" 
-  style="border-color: red; font-size: 16px; color: red; font-weight: normal; pointer-events: none; white-space: nowrap; font-family: sans-serif, Arial; z-index: 1000; padding: 4px 8px; border-width: 1px 0px 0px; border-style: solid; position: absolute; translate: none; rotate: none; scale: none; top: 3500px; transform: translate(0px, 0px); display: block; left: 287px;">end</div>
-  <div class="gsap-marker-start" 
-  style="border-color: green; font-size: 16px; color: green; font-weight: normal; pointer-events: none; white-space: nowrap; font-family: sans-serif, Arial; z-index: 1000; padding: 4px 8px; border-width: 1px 0px 0px; border-style: solid; position: absolute; translate: none; rotate: none; scale: none; top: 0px; transform: translate(0px, 0px); display: block; left: 282.984px;">start</div>
-  <div class="gsap-marker-scroller-end" 
-  style="border-color: red; font-size: 16px; color: red; font-weight: normal; pointer-events: none; white-space: nowrap; font-family: sans-serif, Arial; z-index: 1000; padding: 4px 8px; border-width: 1px 0px 0px; border-style: solid; position: fixed; right: 0px; box-sizing: border-box; text-align: left; width: 104px; translate: none; rotate: none; scale: none; top: 0px; transform: translate(0px, 0px); display: block;">scroller-end</div>
-  <div class="gsap-marker-scroller-start" 
-  style="border-color: green; font-size: 16px; color: green; font-weight: normal; pointer-events: none; white-space: nowrap; font-family: sans-serif, Arial; z-index: 1000; padding: 4px 8px; border-width: 1px 0px 0px; border-style: solid; position: fixed; right: 0px; translate: none; rotate: none; scale: none; top: 0px; transform: translate(0px, 0px); display: block;">scroller-start</div> -->
+<style>
+.lang-switcher-wrapper {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    z-index: 9999;
+}
+.lang-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    min-width: 120px;
+    justify-content: space-between;
+}
+.lang-btn::after {
+    content: '▼';
+    font-size: 10px;
+}
+.lang-dropdown {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 5px;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 180px;
+}
+.lang-dropdown.active {
+    display: block;
+}
+.lang-option {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+.lang-option:hover {
+    background: #f5f5f5;
+}
+.lang-option.current {
+    font-weight: bold;
+    color: #0060aa;
+    background: #eef6fb;
+}
+</style>
+
+<div class="lang-switcher-wrapper">
+    <div class="lang-btn" id="currentLangBtn"> Global</div>
+    <div class="lang-dropdown" id="langDropdown">
+        <a href="?lang=en" class="lang-option" data-lang="en">English</a>
+        <a href="?lang=cn" class="lang-option" data-lang="cn">简体中文</a>
+        <a href="?lang=jp" class="lang-option" data-lang="jp">日本語</a>
+        <a href="?lang=ar" class="lang-option" data-lang="ar">العربية</a>
+        <a href="?lang=br" class="lang-option" data-lang="br">Português (Brasil)</a>
+        <a href="?lang=es" class="lang-option" data-lang="es">Español</a>
+        <a href="?lang=fr" class="lang-option" data-lang="fr">Français</a>
+        <a href="?lang=hu" class="lang-option" data-lang="hu">Magyar</a>
+        <a href="?lang=ko" class="lang-option" data-lang="ko">한국어</a>
+        <a href="?lang=pl" class="lang-option" data-lang="pl">Polski</a>
+        <a href="?lang=ru" class="lang-option" data-lang="ru">Русский</a>
+        <a href="?lang=th" class="lang-option" data-lang="th">ภาษาไทย</a>
+        <a href="?lang=vi" class="lang-option" data-lang="vi">Tiếng Việt</a>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('currentLangBtn');
+    const dropdown = document.getElementById('langDropdown');
+    
+    // Toggle dropdown
+    btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('active');
+    });
+    
+    // Close when clicking outside
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+    });
+
+    // Update button text based on current URL or default
+    const urlParams = new URLSearchParams(window.location.search);
+    const textMap = {
+        'en': 'English',
+        'cn': '简体中文',
+        'jp': '日本語',
+        'ar': 'العربية',
+        'br': 'Português',
+        'es': 'Español',
+        'fr': 'Français',
+        'hu': 'Magyar',
+        'ko': '한국어',
+        'pl': 'Polski',
+        'ru': 'Русский',
+        'th': 'ภาษาไทย',
+        'vi': 'Tiếng Việt'
+    };
+    
+    let currentLang = urlParams.get('lang') || 'en';
+    if(textMap[currentLang]) {
+        btn.innerHTML = textMap[currentLang];
+        // Highlight current option
+        const options = dropdown.querySelectorAll('.lang-option');
+        options.forEach(opt => {
+            if(opt.dataset.lang === currentLang) opt.classList.add('current');
+        });
+    }
+});
+</script>
+
 <canvas id="sequence" width="868" height="700" 
   style="position: fixed; top: 50%; left: 50%; width: 100vw; height: 100vh; object-fit: contain; transform: translate(-50%, -50%); z-index: -1;"></canvas>
   <header>
@@ -493,9 +613,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <span>English</span>
           </a>
           <div class="dropdown">
-            <a href="https://www.kingtony.com/2026_Ktday/Frames_on_KT.php">繁體中文</a>
-            <a href="https://www.kingtony.com/2026_Ktday/Frames_on_KT.php">简体</a>
-            <a href="https://www.kingtony.com/2026_Ktday/Frames_on_KT.php">Español</a>
+            <a href="https://www.kingtony.com/2026_Ktday/march11-tool-workship-day.php">繁體中文</a>
+            <a href="https://www.kingtony.com/2026_Ktday/march11-tool-workship-day.php">简体</a>
+            <a href="https://www.kingtony.com/2026_Ktday/march11-tool-workship-day.php">Español</a>
           </div>
         </li>
 
@@ -963,21 +1083,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
   </div>
   <div class="hero-btn" style="display: flex; flex-flow: column nowrap; gap: 24px;">
-<<<<<<< HEAD
-    <a href="https://www.kingtony.com/2026_Ktday/story_page.html" data-i18n="view-products" class="zz-btn zz-btn-primary zz-btn-wide">Explore the Season</a>
-    <!-- 僅在手機版顯示 (小於 768px)，維持原有的 zz-btn-text -->
-    <a href="https://www.kingtony.com/about3.php" data-i18n="explore-stores" class="zz-btn zz-btn-text zz-mobile-only">Why is KING TONY</a>
-    
-    <!-- 僅在平板以上顯示 (大於等於 768px)，切換為 zz-btn-white -->
-    <a href="https://www.kingtony.com/about3.php" data-i18n="explore-stores" class="zz-btn zz-btn-white zz-btn-wide zz-desktop-only">Why is KING TONY</a>
-=======
-    <a href="https://www.kingtony.com/2026_Ktday/story_page.html" data-i18n="season" class="zz-btn zz-btn-primary zz-btn-wide">Explore the Season</a>
+    <a href="https://www.kingtony.com/2026_Ktday/story_page.html?utm_source=311-Activity&utm_medium=btn" data-i18n="season" class="zz-btn zz-btn-primary zz-btn-wide">Explore the Season</a>
     <!-- 僅在手機版顯示 (小於 768px)，維持原有的 zz-btn-text -->
     <a href="https://www.kingtony.com/about3.php?utm_source=311-Activity&utm_medium=btn" data-i18n="why" class="zz-btn zz-btn-text zz-mobile-only">Why is KING TONY</a>
     
     <!-- 僅在平板以上顯示 (大於等於 768px)，切換為 zz-btn-white -->
     <a href="https://www.kingtony.com/about3.php?utm_source=311-Activity&utm_medium=btn" data-i18n="why" class="zz-btn zz-btn-white zz-btn-wide zz-desktop-only">Why is KING TONY</a>
->>>>>>> 7e08883 (set utms)
 
     <!-- <a href="/products" style="padding: 14px 32px; background: #006EBA; color: #fff; border-radius:25px; text-decoration: none; font-size: 1rem; font-weight: 500; transition: background 0.2s;">View Products</a>
     <a href="/contact" style="padding: 14px 32px; background: #194bb5; color: #fff; border-radius: 25px; text-decoration: none; font-size: 1rem; font-weight: 500; transition: background 0.2s;">Contact Us</a> -->
@@ -993,11 +1104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="zz-item-lg" style="background-color: var(--zz-blue); height: 100%; display: flex; align-items: center; justify-content: center;">
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"> 
               <h1 data-i18n="new-items" style="margin-bottom: 15px;">NEW ITEMS</h1>
-<<<<<<< HEAD
-              <a href="https://www.kingtony.com/product_new.php?utm_source=KT-Web-Head-en&amp;utm_medium=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
-=======
               <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
->>>>>>> 7e08883 (set utms)
             </div>
           </div>
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
@@ -1032,11 +1139,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="zz-item-m-main zz-item-box" style="background-color: rgba(0, 110, 186, 0.8); height: 100%; display: flex; align-items: center; justify-content: center; ">
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"> 
             <h1 class="new-items" data-i18n="new-items" style="margin-bottom: 20px;">NEW ITEMS</h1>
-<<<<<<< HEAD
-             <a href="https://www.kingtony.com/product_new.php?utm_source=KT-Web-Head-en&amp;utm_medium=Newproduct" data-i18n="learn-more" class="new-items-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
-=======
              <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="new-items-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
->>>>>>> 7e08883 (set utms)
            </div>
            </div>
              <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
@@ -1082,11 +1185,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="stores-content">
         <h1 class="our-stores" data-i18n="our-stores">Our <br> Locations</h1>
         <p style="max-width: 600px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="stores-description">
-<<<<<<< HEAD
-          are located all over the world; you can find <a href="https://www.kingtony.com/dstribution.php?utm_source=KT-Web-Head-en&utm_medium=Distribution" class="our-locations-link zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">our presence</a> in America, Europe, Africa, the Middle East, Asia, and the Oceania.
-=======
           are located all over the world; you can find <a href="https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution" class="our-locations-link zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">our presence</a> in America, Europe, Africa, the Middle East, Asia, and the Oceania.
->>>>>>> 7e08883 (set utms)
         </p>
       </div>
       <div class="countries" style="width: 100%; background-color: rgba(24, 27, 29, 0.6);">
@@ -1097,24 +1196,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <section class="support" style="display: flex; flex-direction: column; background-color: rgba(0, 110, 186, 0.6); align-items: start; justify-content: center; color: white; ">
               <h1 class="reliable-support" data-i18n="reliable-support">Reliable<br>Support</h1>
               <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="support-description">
-<<<<<<< HEAD
-                built for professionals. Backed by <a href="https://www.kingtony.com/support.php?utm_source=KT-Web-Head-en&utm_medium=Support" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">support</a> you can rely on—anytime.</p>
-                  <a href="https://www.kingtony.com/support.php?utm_source=KT-Web-Head-en&utm_medium=Support" data-i18n="learn-more" class="reliable-support-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
-=======
                 built for professionals. Backed by <a href="https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">support</a> you can rely on—anytime.</p>
                   <a href="https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support" data-i18n="learn-more" class="reliable-support-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
->>>>>>> 7e08883 (set utms)
   </section>
             
   <section class="join-us" style="display: flex; flex-direction: column; background-color: rgba(0, 0, 0, 0.8); align-items: start; justify-content: center; color: white;">
               <h1 class="joinUs" data-i18n="join-us">JOIN US</h1>
-<<<<<<< HEAD
-      <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="join-description">the <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=KT-Web-Footer-en&utm_medium=FB_link" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">KING TONY Community</a>, be part of our journey and grow with KING TONY—where professionals come together.</p>
-              <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=KT-Web-Footer-en&utm_medium=FB_link" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
-=======
       <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="join-description">the <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">KING TONY Community</a>, be part of our journey and grow with KING TONY—where professionals come together.</p>
               <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
->>>>>>> 7e08883 (set utms)
   </section>
 </div>
 </div>
@@ -1257,7 +1346,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
 
 <footer class="footer">
-
     <div id="gotop2">
       <div class="top">
         <a href="https://www.kingtony.com/link/socialmedia/FBmesseger_en_link.html?utm_source=KT-SideWeb-en&amp;utm_medium=FBmesseger_en_link" target="_blank">
@@ -1420,7 +1508,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://www.kingtony.com/js/swiper-bundle.min.js"></script>
 <script src="https://www.kingtony.com/js/lazysizes.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.js"></script> 
-<!-- <script src="https://www.kingtony.com/2026_Ktday/js/i18n.js"></script>  -->
+<script src="https://www.kingtony.com/2026_Ktday/js/i18n.js"></script> 
 <!-- 幻燈片控制 -->
 <script>
   (function() {

@@ -1,7 +1,7 @@
 {
   "current-lang": "العربية",
-  "hero-title": "مرحبا بكم في KING TONY",
-  "hero-description": "KING TONY هي علامة تجارية عالمية للأدوات الاحترافية، تلتزم بتقديم منتجات وخدمات عالية الجودة للعملاء حول العالم.",
+  "hero-title": "11 مارس | اليوم الدولي لتقديس الأدوات",
+  "hero-description": "احترم أدواتك، استمتع بعملك. عندما تُحترم الأدوات، فإنها تعطي شيئًا بالمقابل— الوضوح، الثقة، والفخر بالعمل.",
   "view-products": "عرض المنتجات",
   "explore-stores": "استكشاف المتاجر",
   "cat-01": "KING TONY Rock",
@@ -24,13 +24,15 @@
   "cat-18": "البضائع الترويجية",
   "cat-19": "عرض الذكرى السنوية 35",
   "cat-20": "مهرجان الأدوات",
+  "season": "اكتشف الموسم",
+  "why": "لماذا KING TONY",
   "new-items": "منتجات جديدة",
   "learn-more": "اعرف المزيد",
-  "our-stores": "متجرنا",
-  "stores-description": "متواجدون في جميع أنحاء العالم؛ يمكنك العثور على <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>تواجدنا</a> في أمريكا، أوروبا، أفريقيا، الشرق الأوسط، آسيا، وأوقيانوسيا.",
+  "our-stores": "مواقعنا <br>",
+  "stores-description": "موجودة في جميع أنحاء العالم؛ يمكنك العثور على <a href='https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution' class='our-locations-link zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>توابدنا</a> في أمريكا، أوروبا، أفريقيا، الشرق الأوسط، آسيا، وأوقيانوسيا.",
   "countries": "دولة",
-  "reliable-support": "دعم موثوق",
-  "support-description": "مصمم للمحترفين. مدعوم بـ <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>دعم</a> يمكنك الاعتماد عليه في أي وقت.",
+  "reliable-support": "دعم<br>موثوق",
+  "support-description": "صُنع للمحترفين. مدعوم بـ <a href='https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>دعم</a> يمكنك الاعتماد عليه — في أي وقت.",
   "join-us": "انضم إلينا",
-  "join-description": "إلى <a href='/contact' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>مجتمع كينغ توني (KING TONY)</a>، كن جزءًا من رحلتنا وانمو مع كينغ توني—حيث يجتمع المحترفون."
+  "join-description": "إلى <a href='https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link' class='zz-btn zz-btn-text' style='display: inline; vertical-align: baseline;'>مجتمع KING TONY</a>, كن جزءًا من رحلتنا وانمو مع KING TONY — حيث يجتمع المحترفون."
 }
