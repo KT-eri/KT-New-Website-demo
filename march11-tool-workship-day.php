@@ -185,12 +185,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   .multipleSlider {
+=======
+  .mutipleSlider {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     margin: 20% 0;
   }
   .new-items {
     font-size: 2.2rem;
   }
+<<<<<<< HEAD
   .hero-section, .multipleSlider {
+=======
+  .hero-section, .mutipleSlider {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     padding: 0 5% !important;
   }  
   .below-sections {
@@ -205,7 +212,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   }
   .our-stores, .reliable-support, .joinUs {
+<<<<<<< HEAD
     font-size: 3rem;
+=======
+    font-size: 3.5rem;
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
   }
   .countries {
     height: 300px;
@@ -240,13 +251,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .hero-description {
     width: 50%; 
   }
+<<<<<<< HEAD
   .multipleSlider {
+=======
+  .mutipleSlider {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     margin: 12% 0;
   }
   .new-items {
     font-size: 5rem;
   }
+<<<<<<< HEAD
   .hero-section, .multipleSlider {
+=======
+  .hero-section, .mutipleSlider {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     padding: 0 5% !important;
   } 
   .zz-mobile-only { display: none !important; }
@@ -305,11 +324,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     min-width: 15vw !important;
   } 
 
+<<<<<<< HEAD
    .multipleSlider {
+=======
+   .mutipleSlider {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     margin: 8% 0;
     min-width: none;
     max-width: none !important;
   }
+<<<<<<< HEAD
   .multipleSlider h1 {
     font-size: 2.5vw !important;
   }
@@ -321,6 +345,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     min-width: 10vw !important;
   }
   .multipleSlider span {
+=======
+  .mutipleSlider h1 {
+    font-size: 2.5vw !important;
+  }
+  .mutipleSlider a {
+    font-size: 1.1vw !important;
+  }
+  .mutipleSlider .zz-btn {
+    padding: 1.2vw 1.2vw !important;
+    min-width: 10vw !important;
+  }
+  .mutipleSlider span {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     font-size: 1.2vw !important;
   }
   .zz-slider-wrapper {
@@ -379,7 +416,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .hero-content, .hero-btn {
     /* background-color: rgba(255, 255, 255, 0.2); */
   }
+<<<<<<< HEAD
   .multipleSlider, .zz-slider-wrapper {
+=======
+  .mutipleSlider, .zz-slider-wrapper {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     max-width: none !important;
   }
   .zz-slider-wrapper {
@@ -401,6 +442,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding-top: 30% !important;
   }
   /* 內部元素等比縮放 */
+<<<<<<< HEAD
   .multipleSlider h1 {
     font-size: 2.5vw !important;
   }
@@ -412,6 +454,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     min-width: 10vw !important;
   }
   .multipleSlider span {
+=======
+  .mutipleSlider h1 {
+    font-size: 2.5vw !important;
+  }
+  .mutipleSlider a {
+    font-size: 1.1vw !important;
+  }
+  .mutipleSlider .zz-btn {
+    padding: 1.2vw 1.2vw !important;
+    min-width: 10vw !important;
+  }
+  .mutipleSlider span {
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
     font-size: 1.2vw !important;
   }
 
@@ -447,10 +502,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body class="custom-setting" style="background-color: rgb(0, 0, 0); overflow-x: hidden;">
+<<<<<<< HEAD
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N87BGD4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+=======
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
 <style>
 .lang-switcher-wrapper {
     position: fixed;
@@ -1100,7 +1158,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <!-- desktop and mobile slider -->
+<<<<<<< HEAD
 <section class="multipleSlider">
+=======
+<section class="mutipleSlider">
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
   <div class="zz-slider-wrapper" id="zz-slider-root">
     <div class="zz-slider-main">
       <div id="zz-slider-desktop" class="keen-slider zz-desktop-only">
@@ -1111,6 +1173,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
             </div>
           </div>
+<<<<<<< HEAD
           <a href="https://www.kingtony.com/catalogs/Tools-Storage-Tools-System-Sets/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Tools-Storage-Tools-System-Sets"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
           <a href="https://www.kingtony.com/catalogs/Impact-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Impact-Sockets-and-Accessories"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
           <a href="https://www.kingtony.com/catalogs/Hand-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Hand-Sockets-and-Accessories"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
@@ -1134,6 +1197,31 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="https://www.kingtony.com/catalogs/Automotive-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Automotive-Tools" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
           <a href="https://www.kingtony.com/catalogs/STARTER/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-STARTER"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
           <a href="https://www.kingtony.com/catalogs/Promotional-Merchandise/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Promotional-Merchandise"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
+=======
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151418040000005.png" alt="05"><span data-i18n="cat-05">05</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-desktop">
+          <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Torque_Wrench_lg.png" alt="06"><span data-i18n="cat-06">06</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151421520000005.png" alt="07"><span data-i18n="cat-07">07</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422110000005.png" alt="08"><span data-i18n="cat-08">08</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422360000005.png" alt="09"><span data-i18n="cat-09">09</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151423460000005.png" alt="10"><span data-i18n="cat-10">10</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-desktop">
+          <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/VDE_lg.png" alt="11"><span data-i18n="cat-11">11</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432060000005.png" alt="12"><span data-i18n="cat-12">12</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432270000005.png" alt="13"><span data-i18n="cat-13">13</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151433280000005.png" alt="14"><span data-i18n="cat-14">14</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432560000005.png" alt="15"><span data-i18n="cat-15">15</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-desktop">
+          <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
         </div>
       </div>
 
@@ -1143,6 +1231,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="zz-item-m-main zz-item-box" style="background-color: rgba(0, 110, 186, 0.8); height: 100%; display: flex; align-items: center; justify-content: center; ">
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"> 
             <h1 class="new-items" data-i18n="new-items" style="margin-bottom: 20px;">NEW ITEMS</h1>
+<<<<<<< HEAD
              <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
            </div>
            </div>
@@ -1173,6 +1262,38 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="https://www.kingtony.com/catalogs/Automotive-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Automotive-Tools" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151433530000005.png" alt="16"><span data-i18n="cat-16">16</span></a>
           <a href="https://www.kingtony.com/catalogs/STARTER/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-STARTER"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
           <a href="https://www.kingtony.com/catalogs/Promotional-Merchandise/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Promotional-Merchandise"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
+=======
+             <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="new-items-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
+           </div>
+           </div>
+             <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
+             <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-mobile">
+          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151418040000005.png" alt="05"><span data-i18n="cat-05">05</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151418490000005.png" alt="06"><span data-i18n="cat-06">06</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-mobile">
+          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151421520000005.png" alt="07"><span data-i18n="cat-07">07</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422110000005.png" alt="08"><span data-i18n="cat-08">08</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422360000005.png" alt="09"><span data-i18n="cat-09">09</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-mobile">
+          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151423460000005.png" alt="10"><span data-i18n="cat-10">10</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151431430000005.png" alt="11"><span data-i18n="cat-11">11</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432060000005.png" alt="12"><span data-i18n="cat-12">12</span></a>
+        </div> 
+        <div class="keen-slider__slide zz-grid-mobile">
+          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151432270000005.png" alt="13"><span data-i18n="cat-13">13</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151433280000005.png" alt="14"><span data-i18n="cat-14">14</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432560000005.png" alt="15"><span data-i18n="cat-15">15</span></a>
+        </div>
+        <div class="keen-slider__slide zz-grid-mobile" style="display: flex; flex-direction: column;">
+          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151433530000005.png" alt="16"><span data-i18n="cat-16">16</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
+          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
+>>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
         </div>
       </div>
     </div>
