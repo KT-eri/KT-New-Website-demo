@@ -1,0 +1,91 @@
+/* --- 基礎按鈕設定 (Base) --- */
+/* 將變數定義在這裡，只影響有 zz-btn class 的元素 */
+.zz-btn {
+  --zz-blue: #0060aa;       /* 品牌藍 */
+  --zz-white: #ffffff;
+  --zz-radius: 50px;
+  --zz-padding: 12px 28px;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* 重置可能被全域污染的屬性 */
+  text-decoration: none !important; /* 強制移除底線 */
+  line-height: 1.2;
+  box-sizing: border-box; /* 確保邊框算在寬度內 */
+  
+  /* 自定義樣式 */
+  font-size: 16px;
+  font-weight: 400;
+  padding: var(--zz-padding);
+  border-radius: var(--zz-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* --- 樣式 1: 實心藍 (Default) --- */
+.zz-btn-primary {
+  background-color: var(--zz-blue);
+  color: var(--zz-white);
+  border: 2px solid var(--zz-blue);
+}
+
+.zz-btn-primary:hover {
+  background-color: var(--zz-white);
+  color: var(--zz-blue);
+  border: 3px solid var(--zz-blue);
+}
+
+/* --- 樣式 2: 寬版 (Wide) --- */
+/* 搭配 zz-btn-primary 一起使用 */
+.zz-btn-wide {
+  font-weight: 400;
+  min-width: 180px; /* 強制最小寬度 */
+  text-align: center;
+}
+
+/* --- 樣式 3: 實心白 (White) --- */
+.zz-btn-white {
+  background-color: var(--zz-white);
+  color: var(--zz-blue);
+  /* 預設給一個透明邊框佔位，hover 時才上色，避免尺寸改變 */
+  border: 3px solid transparent; 
+}
+
+.zz-btn-white:hover {
+  background-color: var(--zz-white); /* 保持白色背景 */
+  color: var(--zz-blue);
+  border: 3px solid var(--zz-blue);  /* 邊框變藍 */
+}
+
+/* --- 樣式 4: 線框 (Outline) --- */
+/* 適合深色背景使用 */
+.zz-btn-outline {
+  background-color: transparent;
+  color: var(--zz-white);
+  border: 2px solid var(--zz-white); /* 預設 2px */
+}
+
+.zz-btn-outline:hover {
+  transform: translateY(-2px);
+  border: 2.3px solid var(--zz-white); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --- 樣式 5: 純文字連結 (Text Link) --- */
+.zz-btn-text {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--zz-white);
+  text-decoration: underline !important; 
+  text-underline-offset: 4px;
+  font-weight: 400; 
+  align-self: center;
+}
+
+.zz-btn-text:hover {
+  text-decoration: none !important; /* 保持移除底線 */
+  transform: scale(1.2); 
+}
