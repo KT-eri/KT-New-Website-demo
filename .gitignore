@@ -52,4 +52,4 @@ coverage/
 *.webm
 
 # === EXCEPT: keep one video file ===
-!media/intro.mp4
+turning-round.mp4

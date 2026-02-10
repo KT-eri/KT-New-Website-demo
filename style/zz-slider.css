@@ -1,0 +1,269 @@
+/* --- Keen Slider 核心 CSS (必須引入) --- */
+@import url('https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css');
+
+/* --- 自定義幻燈片容器 --- */
+.zz-slider-wrapper {
+  /* 區域變數 */
+  --zz-blue: #006eba;       /* IKEA 藍 */
+  --zz-bg-gray: #f5f5f5;    /* 淺灰底 */
+  --zz-thumb-width: 25%;    /* 動態計算 */
+
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 480px;            /* 固定高度 */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.zz-slider-main {
+  flex-grow: 1;
+  min-height: 0;
+  position: relative;
+  width: 100%;
+  background-color: var(--zz-white); ;
+}
+
+/* --- 響應式顯示控制 (搭配 JS 邏輯) --- */
+/* 預設隱藏，透過 Media Query 開啟 */
+.zz-desktop-only { display: none !important; }
+.zz-mobile-only { display: none !important; }
+
+/* 桌機版：768px 以上顯示 */
+@media (min-width: 768px) {
+  .zz-desktop-only { display: block !important; }
+    #zz-slider-mobile {
+    display: none !important;
+  }
+}
+    
+
+/* 手機版：767px 以下顯示 */
+@media (max-width: 767px) {
+  .zz-mobile-only { display: block !important; }
+   #zz-slider-desktop {
+    display: none !important;
+  }
+}
+
+/* --- 高度與寬度塌陷修復 (關鍵樣式) --- */
+/* 1. 確保 Slider 軌道繼承高度 */
+.zz-slider-wrapper .keen-slider { 
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+}
+
+.zz-slider-wrapper .keen-slider__slide {
+    /* 關鍵修正：不能用 block，必須強制維持 grid */
+    display: grid !important; 
+    
+    /* 確保高度與寬度 */
+    height: 100% !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important; /* 防止被擠壓成 0 */
+    
+    /* Grid 結構設定 (這裡重申一次，確保不被蓋掉) */
+    gap: 12px;
+    box-sizing: border-box !important;
+    
+}
+
+/* 2. 桌機版 Grid 設定 */
+.zz-slider-wrapper .zz-grid-desktop {
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-rows: 1fr 1fr !important;
+}
+
+/* 3. 手機版 Grid 設定 */
+.zz-slider-wrapper .zz-grid-mobile {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1.5fr 1fr !important;
+}
+/* --- 格狀佈局系統 --- */
+.zz-grid-desktop, .zz-grid-mobile {
+  display: grid;
+  gap: 12px;
+  height: 100% !important; /* 確保 Grid 撐滿 Slide */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 桌機版佈局 (4欄 2列) */
+.zz-grid-desktop {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+/* 手機版佈局 (2欄, 上高下低) */
+.zz-grid-mobile {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+}
+.zz-grid-mobile-last {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* --- 單元格尺寸設定 --- */
+/* 桌機：大方塊 (跨 2x2) */
+.zz-item-lg { grid-column: span 2; grid-row: span 2; }
+/* 桌機：最後一頁特殊佔位 */
+.zz-item-half-top { grid-column: 1 / 4; grid-row: 1 / 2; }
+.zz-item-half-bottom { grid-column: 1 / 4; grid-row: 2 / 3; }
+
+/* 手機：上方大塊 */
+.zz-item-m-main { grid-column: span 2; }
+/* 手機：最後一塊 */
+.zz-item-m-last { grid-column: span 1; }
+
+/* --- 內容按鈕樣式 --- */
+.zz-slider-wrapper .keen-slider__slide a,
+.zz-slider-wrapper .keen-slider__slide {
+  /* background-color: var(--zz-bg-gray); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  /* border-radius: 4px; */
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+  /* width: 100%; */
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.zz-slider-wrapper .keen-slider__slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 1;
+  min-height: 0;
+  filter: brightness(90%);
+  transition: transform 0.3s ease;
+}
+
+/* --- Hover 紅色動畫框 --- */
+.zz-slider-wrapper .keen-slider__slide a:not(.newItems-btn)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid #dc000c; /* King Tony Red */
+  box-sizing: border-box; /* 確保邊框在內部 */
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+  /* 初始狀態稍微大一點，營造縮放進入感 */
+  transform: scale(1.02);
+}
+
+.zz-slider-wrapper .keen-slider__slide a:not(.newItems-btn):hover::after {
+  opacity: 1;
+  transform: scale(1);
+  inset: 2px; /* 稍微縮排避免被 overflow:hidden 或是邊界切到 */
+}
+
+.zz-slider-wrapper .keen-slider__slide a:not(.newItems-btn):hover img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.zz-slider-wrapper .keen-slider__slide a span {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+  color: white;
+  /* 可選：增加一點文字陰影或背景，確保在圖片上清晰 */
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0);
+}
+
+/* 阿拉伯語與泰語字體放大 */
+html[lang="ar"] .zz-slider-wrapper .keen-slider__slide a span,
+html[lang="th"] .zz-slider-wrapper .keen-slider__slide a span {
+  font-size: 1.4rem;
+  bottom: 10px; /* 稍微調整位置避免太擠 */
+}
+
+/* .zz-slider-wrapper .keen-slider__slide a:hover,
+.zz-slider-wrapper .keen-slider__slide{
+  background-color: #e8e8e8;
+}
+.zz-item-box {
+  background-color: #e8e8e8;
+} */
+
+/* --- 進度條 (卷軸) 樣式 --- */
+.zz-controls {
+  margin-top: 40px;
+  position: relative;
+  height: 6px;
+  background: #eee;
+  /* border-radius: 2px; */
+  width: 100%;
+  cursor: pointer;
+}
+
+.zz-range-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  margin: 0;
+  height: 6px; /* 與容器同高 */
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+}
+
+/* 滑塊 (Thumb) - Webkit (Chrome/Safari) */
+.zz-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  width: var(--zz-thumb-width);
+  background: var(--zz-blue);
+  border: none;
+  /* border-radius: 2px; */
+  transition: width 0.3s ease;
+}
+
+/* 滑塊 (Thumb) - Firefox */
+.zz-range-input::-moz-range-thumb {
+  height: 6px;
+  width: var(--zz-thumb-width);
+  background: var(--zz-blue);
+  border: none;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+/* === 視覺診斷模式 (Debug Mode) === */
+
+/* 1. 檢查外層容器 (紅色框)：確認高度是否有 480px */
+/* .zz-slider-wrapper {
+    border: 5px solid red !important;
+} */
+
+/* 5. 檢查按鈕連結 (黃色背景)：確認連結是否存在 */
+/* .zz-slider-wrapper .keen-slider__slide a {
+    background-color: yellow !important;
+    opacity: 0.8;
+    color: black !important;
+} */
