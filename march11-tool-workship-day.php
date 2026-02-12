@@ -1122,11 +1122,11 @@ document.addEventListener('DOMContentLoaded', function() {
                   <path id="globe" d="M0,8a8,8,0,1,1,8,8A8,8,0,0,1,0,8ZM7.5,1.077A3.519,3.519,0,0,0,5.613,2.932,7.97,7.97,0,0,0,5.145,4H7.5V1.077ZM4.09,4a9.267,9.267,0,0,1,.64-1.539,6.7,6.7,0,0,1,.6-.933A7.025,7.025,0,0,0,2.255,4ZM3.508,7.5A13.7,13.7,0,0,1,3.82,5H1.674a6.958,6.958,0,0,0-.656,2.5h2.49ZM4.847,5a12.5,12.5,0,0,0-.338,2.5H7.5V5ZM8.5,5V7.5h2.99A12.5,12.5,0,0,0,11.153,5ZM4.51,8.5A12.5,12.5,0,0,0,4.847,11H7.5V8.5Zm3.99,0V11h2.653a12.454,12.454,0,0,0,.338-2.5ZM5.145,12a7.964,7.964,0,0,0,.468,1.068A3.525,3.525,0,0,0,7.5,14.923V12Zm.182,2.472a6.7,6.7,0,0,1-.6-.933A9.268,9.268,0,0,1,4.09,12H2.255a7.024,7.024,0,0,0,3.072,2.472ZM3.82,11a13.652,13.652,0,0,1-.312-2.5H1.018A6.926,6.926,0,0,0,1.674,11Zm6.853,3.472A7.024,7.024,0,0,0,13.745,12H11.91a9.27,9.27,0,0,1-.64,1.539,6.688,6.688,0,0,1-.6.933ZM8.5,12v2.923a3.519,3.519,0,0,0,1.887-1.855A7.964,7.964,0,0,0,10.855,12H8.5Zm3.68-1h2.146a6.926,6.926,0,0,0,.656-2.5h-2.49A13.65,13.65,0,0,1,12.18,11Zm2.8-3.5A6.959,6.959,0,0,0,14.326,5H12.18a13.7,13.7,0,0,1,.312,2.5ZM11.27,2.461A9.255,9.255,0,0,1,11.91,4h1.835a7.024,7.024,0,0,0-3.072-2.472,6.788,6.788,0,0,1,.6.933ZM10.855,4a7.966,7.966,0,0,0-.468-1.068A3.522,3.522,0,0,0,8.5,1.077V4Z" fill="#fff"></path>
                 </svg>
               </a>
-              <div class="dropdown">
+              <!-- <div class="dropdown">
                 <a href="https://www.kingtony.com/tw/index.php?url=promote%2F20260311-testing">繁體中文</a>
                 <a href="https://www.kingtony.com/cn/index.php?url=promote%2F20260311-testing">简体</a>
                 <a href="https://www.kingtony.com/es/index.php?url=promote%2F20260311-testing">Español</a>
-              </div>
+              </div> -->
             </li>
 
                       <li class="shop_cart">
@@ -1169,15 +1169,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <!-- desktop and mobile slider -->
-<<<<<<< HEAD
+
 <section class="multipleSlider">
-=======
-<<<<<<< HEAD
-<section class="multipleSlider">
-=======
-<section class="mutipleSlider">
->>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
   <div class="zz-slider-wrapper" id="zz-slider-root">
     <div class="zz-slider-main">
       <div id="zz-slider-desktop" class="keen-slider zz-desktop-only">
@@ -1188,10 +1181,6 @@ document.addEventListener('DOMContentLoaded', function() {
               <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
             </div>
           </div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
           <a href="https://www.kingtony.com/catalogs/Tools-Storage-Tools-System-Sets/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Tools-Storage-Tools-System-Sets"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
           <a href="https://www.kingtony.com/catalogs/Impact-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Impact-Sockets-and-Accessories"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
           <a href="https://www.kingtony.com/catalogs/Hand-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Hand-Sockets-and-Accessories"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
@@ -1215,9 +1204,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="https://www.kingtony.com/catalogs/Automotive-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Automotive-Tools" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
           <a href="https://www.kingtony.com/catalogs/STARTER/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-STARTER"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
           <a href="https://www.kingtony.com/catalogs/Promotional-Merchandise/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Promotional-Merchandise"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
-<<<<<<< HEAD
-=======
-=======
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
@@ -1241,8 +1227,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
           <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
->>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
         </div>
       </div>
 
@@ -1252,10 +1236,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="zz-item-m-main zz-item-box" style="background-color: rgba(0, 110, 186, 0.8); height: 100%; display: flex; align-items: center; justify-content: center; ">
           <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"> 
             <h1 class="new-items" data-i18n="new-items" style="margin-bottom: 20px;">NEW ITEMS</h1>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
              <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
            </div>
            </div>
@@ -1286,41 +1266,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="https://www.kingtony.com/catalogs/Automotive-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Automotive-Tools" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151433530000005.png" alt="16"><span data-i18n="cat-16">16</span></a>
           <a href="https://www.kingtony.com/catalogs/STARTER/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-STARTER"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
           <a href="https://www.kingtony.com/catalogs/Promotional-Merchandise/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Promotional-Merchandise"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
-<<<<<<< HEAD
-=======
-=======
-             <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="new-items-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
-           </div>
-           </div>
-             <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
-             <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-mobile">
-          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151418040000005.png" alt="05"><span data-i18n="cat-05">05</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151418490000005.png" alt="06"><span data-i18n="cat-06">06</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-mobile">
-          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151421520000005.png" alt="07"><span data-i18n="cat-07">07</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422110000005.png" alt="08"><span data-i18n="cat-08">08</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422360000005.png" alt="09"><span data-i18n="cat-09">09</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-mobile">
-          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151423460000005.png" alt="10"><span data-i18n="cat-10">10</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151431430000005.png" alt="11"><span data-i18n="cat-11">11</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432060000005.png" alt="12"><span data-i18n="cat-12">12</span></a>
-        </div> 
-        <div class="keen-slider__slide zz-grid-mobile">
-          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151432270000005.png" alt="13"><span data-i18n="cat-13">13</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151433280000005.png" alt="14"><span data-i18n="cat-14">14</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432560000005.png" alt="15"><span data-i18n="cat-15">15</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-mobile" style="display: flex; flex-direction: column;">
-          <a href="#" class="zz-item-m-main"><img src="https://www.kingtony.com/upload/products_catalog/2402151433530000005.png" alt="16"><span data-i18n="cat-16">16</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
->>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
         </div>
       </div>
     </div>
@@ -1331,7 +1276,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </section>
 <!-- desktop and mobile slider end -->
-<<<<<<< HEAD
 <div class="extra-container" style="display: flex; flex-direction: column;">
 <div class="below-sections" style="display: flex;">
     <section class="stores" style="display: flex; width: 100%;color: white; background-color: rgba(1, 40, 67, 0.6);">
@@ -1380,34 +1324,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
     </section>
 </div>
-=======
-
-<div class="below-sections" style="display: flex;">
-    <section class="stores" style="display: flex; color: white; background-color: rgba(1, 40, 67, 0.6);">
-      <div class="stores-content">
-        <h1 class="our-stores" data-i18n="our-stores">Our <br> Locations</h1>
-        <p style="max-width: 600px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="stores-description">
-          are located all over the world; you can find <a href="https://www.kingtony.com/dstribution.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Distribution" class="our-locations-link zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">our presence</a> in America, Europe, Africa, the Middle East, Asia, and the Oceania.
-        </p>
-      </div>
-      <div class="countries" style="width: 100%; background-color: rgba(24, 27, 29, 0.6);">
-        <img src="https://www.kingtony.com/2026_Ktday/img/World_Map.png" alt="World Map" style="width: 100%; height: 100%; object-fit: cover;">
-      </div>
-    </section>
-<div class="additional-container" style="display: flex;">  
-  <section class="support" style="display: flex; flex-direction: column; background-color: rgba(0, 110, 186, 0.6); align-items: start; justify-content: center; color: white; ">
-              <h1 class="reliable-support" data-i18n="reliable-support">Reliable<br>Support</h1>
-              <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="support-description">
-                built for professionals. Backed by <a href="https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">support</a> you can rely on—anytime.</p>
-                  <a href="https://www.kingtony.com/support.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Support" data-i18n="learn-more" class="reliable-support-link zz-btn zz-btn-outline newItems-btn">Learn more</a>
-  </section>
-            
-  <section class="join-us" style="display: flex; flex-direction: column; background-color: rgba(0, 0, 0, 0.8); align-items: start; justify-content: center; color: white;">
-              <h1 class="joinUs" data-i18n="join-us">JOIN US</h1>
-      <p style="max-width: 400px; margin: 30px 0; font-size: 1.1rem; line-height: 1.6" data-i18n="join-description">the <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" class="zz-btn zz-btn-text" style="display: inline; vertical-align: baseline;">KING TONY Community</a>, be part of our journey and grow with KING TONY—where professionals come together.</p>
-              <a href="https://www.kingtony.com/link/socialmedia/FB_en_link.html?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
-  </section>
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
 </div>
 </div>
 </div>
@@ -1549,11 +1465,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 
 <footer class="footer">
-<<<<<<< HEAD
     <div id="gotop2" style="z-index: 999;">
-=======
-    <div id="gotop2">
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
       <div class="top">
         <a href="https://www.kingtony.com/link/socialmedia/FBmesseger_en_link.html?utm_source=KT-SideWeb-en&amp;utm_medium=FBmesseger_en_link" target="_blank">
           <img src="../../images/icon/fb.svg" width="49" class="img-fluid" alt="fb-messenger">			

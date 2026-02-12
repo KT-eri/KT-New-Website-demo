@@ -79,24 +79,105 @@
             letter-spacing: 1px;
         }
 
-        /* Cinematic Hero */
-        .hero-section {
-            height: 100vh;
-            /* 模擬活動頁的高對比暗黑風格 */
-            background: radial-gradient(circle at center, rgba(0, 102, 204, 0.15) 0%, rgba(5, 5, 5, 1) 70%),
-                url('https://www.kingtony.com/2026_Ktday/img/hero_banner.png');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+        /* --- 頂部跑馬燈導覽列樣式 --- */
+        .marquee-nav {
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            /* 導覽列半透明黑底 */
+            backdrop-filter: blur(10px);
+            /* 增加高級毛玻璃效果 */
+            height: 28px;
+            /* 固定高度 */
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            /* 隱藏超出螢幕的部分 */
+            padding: 0;
+            /* 清除原本的 padding */
         }
 
+        .marquee-wrapper {
+            display: flex;
+            width: max-content;
+            /* 15秒跑完一輪，linear代表等速，infinite代表無限循環 */
+            animation: marquee-scroll 18s linear infinite;
+        }
+
+        .marquee-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .marquee-group img {
+            height: 25px;
+            /* 配合導覽列固定圖片高度 */
+            margin-right: 10px;
+            /* 圖片之間的間距 */
+            opacity: 0.7;
+            /* 圖片本身也設定微半透明，融入背景 */
+            /* border-radius: 4px; */
+            /* 微微修飾邊緣 */
+        }
+
+        /* 無縫滾動關鍵影格 */
+        @keyframes marquee-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            /* 移動到 -50% 的位置，因為我們放了兩組一模一樣的群組，這樣剛好無縫接軌 */
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* 滑鼠懸停時暫停跑馬燈 (可選) */
+        .marquee-wrapper:hover {
+            animation-play-state: paused;
+        }
+
+        /* --- Hero 區塊底層 --- */
+        .hero-section {
+            height: 100vh;
+            margin-top: 20px;
+            position: relative;
+            background-color: #050505;
+            /* 預設純黑底色 */
+            overflow: hidden;
+            /* 確保圖片不超出範圍 */
+        }
+
+        /* 第一層背景：工業機台草圖 (使用偽元素來做暗黑反轉) */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            /* 載入你最新上傳的工業機台草圖 */
+            background-image: url('img/sketch_01.png');
+            background-size: cover;
+            /* 將圖片稍微往上調一點，讓機台主體落在畫面正中間 */
+            background-position: center 30%;
+
+            /* CSS 魔法：將白底轉為黑底白線，變成暗黑工程圖 */
+            filter: grayscale(80%) invert(1);
+            opacity: 0.40;
+            /* 透明度設定：數字越大線條越明顯 (建議介於 0.2 ~ 0.5 之間) */
+            z-index: 0;
+        }
+
+        /* 第二層遮罩：暗黑與深藍漸層聚光燈 */
         .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.3) 0%, rgba(5, 5, 5, 0.5) 95%);
+            /* 中心帶有微微的 KT Blue 透光感，外圍 60% 處開始變成純黑，把視覺聚焦在中央字體 */
+            background: radial-gradient(circle at center, rgba(0, 75, 150, 0.4) 0%, rgba(5, 5, 5, 1) 60%);
+            z-index: 1;
         }
 
         /* KT Blue Glow Elements */
@@ -108,23 +189,83 @@
             margin: 20px auto;
         }
 
+        /* --- 一般靜態卡片 (WHY WE RESPECT 區塊) - 互動亮色版 --- */
         .static-card {
-            background: var(--kt-panel);
-            /* 深灰背景 */
+            background-color: transparent;
             border: 1px solid #222;
             border-left: 4px solid var(--kt-blue);
-            /* KT Blue 左邊條 */
             height: 100%;
-            /* 讓高度在 Grid 內對齊 */
             position: relative;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            /* 確保卡片本體的變化平滑 */
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+            z-index: 1;
         }
 
+        /* 底層：工業草圖背景 */
+        .static-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('img/sketch_01.png');
+            background-size: cover;
+            background-position: center;
+
+            /* 預設暗黑模式：黑底灰線 */
+            filter: grayscale(100%) invert(1) brightness(0.8);
+            opacity: 0.5;
+            z-index: -2;
+            /* 加入過渡效果，讓變亮的過程是平滑的 */
+            transition: all 0.4s ease;
+        }
+
+        /* 中層：保護文字的暗色濾鏡 */
+        .static-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* 預設：深灰遮罩，讓文字清晰 */
+            background: rgba(15, 15, 20, 0.8);
+            z-index: -1;
+            /* 加入過渡效果 */
+            transition: all 0.4s ease;
+        }
+
+        /* --- Hover 互動效果 --- */
         .static-card:hover {
             transform: translateY(-5px);
-            /* 電腦版 hover 效果 */
-            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.15);
-            /* 藍色光暈 */
+            /* 卡片浮起時，邊框和陰影變亮藍色 */
+            box-shadow: 0 15px 40px rgba(0, 102, 204, 0.3);
+            border-color: var(--kt-blue);
+        }
+
+        /* Hover 時：背景圖變亮 */
+        .static-card:hover::before {
+            /* 提高亮度與對比度，讓線條看起來像在發光 */
+            filter: grayscale(100%) invert(1) brightness(1.2);
+            opacity: 0.7;
+            /* 提高透明度，讓圖更清晰 */
+        }
+
+        /* Hover 時：遮罩變亮色透光 */
+        .static-card:hover::after {
+            /* 將原本的深灰遮罩，改成帶有淡淡 KT Blue 的亮光遮罩 */
+            background: rgba(0, 102, 204, 0.15);
+            /* 加上一點濾鏡讓整體感覺更透亮 */
+            backdrop-filter: brightness(1.1);
+        }
+
+        /* 加碼互動：滑鼠移入卡片時，讓原本半透明的內文變成實心亮白字 */
+        .static-card:hover .text-white-50 {
+            color: #ffffff !important;
+            opacity: 1 !important;
+            transition: color 0.3s ease;
         }
 
         /* Icon 樣式優化 */
@@ -191,7 +332,268 @@
         .text-blue {
             color: var(--kt-blue);
         }
+
+        /* 活動設計 */
+
+        /* 專屬重點區塊樣式 */
+        .spotlight-section {
+            background: linear-gradient(to bottom, #000000, #060e17, #000000);
+            /* 微妙的深藍黑漸層 */
+            position: relative;
+            border-top: 1px solid rgba(0, 102, 204, 0.2);
+            border-bottom: 1px solid rgba(0, 102, 204, 0.2);
+            overflow: hidden;
+        }
+
+        /* 聚光燈光暈 */
+        .spotlight-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150vw;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(0, 102, 204, 0.15) 0%, transparent 60%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* --- 尊榮級懸浮卡片 (工程透視圖背景版) --- */
+        .premium-card {
+            position: relative;
+            border: 1px solid rgba(14, 107, 199, 0.336);
+            border-top: 4px solid var(--kt-blue);
+            z-index: 1;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            /* 確保背景圖放大時不會超出去 */
+            background-color: transparent;
+            /* 背景顏色交給下方的偽元素處理 */
+        }
+
+        /* 底層：工程透視圖背景 */
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            /* ⚠️ 注意：檔名非常長，請確保路徑與你的資料夾一致 */
+            background-image: url('img/sketch.png');
+            background-size: cover;
+            background-position: center;
+
+            /* 🎨 CSS 魔法：將白底藍線轉為暗黑科技風的黑底灰白線 */
+            filter: grayscale(100%) invert(1);
+            opacity: 0.15;
+            /* 降低透明度，當作精緻的浮水印 */
+            z-index: -3;
+            /* 放在最底層 */
+            transition: transform 0.8s ease, opacity 0.4s ease;
+        }
+
+        /* 中層：暗色漸層保護膜 (確保上方的白字絕對清楚) */
+        .premium-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* 從半透明深灰到幾乎純黑的漸層 */
+            /* background: linear-gradient(to bottom, rgba(15, 15, 20, 0.75), rgba(5, 5, 10, 0.95)); */
+            z-index: -2;
+        }
+
+        /* Hover 爆發效果 */
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 102, 204, 0.4), 0 0 15px rgba(0, 102, 204, 0.2) inset;
+            border-color: rgba(0, 102, 204, 0.8);
+        }
+
+        /* Hover 時：背景圖微微放大並變亮，增加高級互動感 */
+        .premium-card:hover::before {
+            transform: scale(1.15);
+            /* 圖片向內推進放大 */
+            opacity: 0.3;
+            /* 浮水印變得稍微明顯一點 */
+        }
+
+        /* 背景巨大浮水印數字 (這段保留你原本的，我只更新 z-index 確保層次正確) */
+        .card-watermark {
+            position: absolute;
+            top: -30px;
+            right: -10px;
+            font-size: 10rem;
+            font-weight: 800;
+            color: rgba(0, 102, 204, 0.05);
+            z-index: -1;
+            /* 夾在圖片保護膜與文字之間 */
+            font-family: 'Antonio', sans-serif;
+            line-height: 1;
+            transition: all 0.4s ease;
+        }
+
+        .premium-card:hover .card-watermark {
+            color: rgba(0, 102, 204, 0.15);
+            transform: scale(1.05) translate(-10px, 10px);
+        }
+
+        /* 暗黑版重點紅字 */
+        .text-highlight {
+            color: #ff4757;
+            /* 霓虹紅 */
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+        }
+
+        /* --- 更新：起始放大 1.5 倍 + 往下引導的箭頭動畫 --- */
+
+        @keyframes scaleAndScroll {
+            0% {
+                transform: scale(1.5) translateY(0);
+                /* 第一格：放大 1.5 倍，停在原點 */
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1) translateY(15px);
+                /* 中間：漸漸縮小回原本大小 (1倍)，並往下移動 */
+                opacity: 0.6;
+                /* 稍微變透明，增加流動感 */
+            }
+
+            100% {
+                transform: scale(1.5) translateY(0);
+                /* 最後：平滑回到放大狀態，無縫接軌下一次循環 */
+                opacity: 1;
+            }
+        }
+
+        .animate-bounce {
+            display: inline-block;
+            /* 確保 transform 縮放與位移能正常運作 */
+            cursor: pointer;
+            transform-origin: center center;
+            /* 確保是從箭頭的正中心進行縮放 */
+            animation: scaleAndScroll 1.8s ease-in-out infinite;
+            /* 1.8秒的平滑呼吸循環 */
+        }
+
+        /* 滑鼠懸停時加快一點動畫速度，增加互動感 */
+        .animate-bounce:hover {
+            animation-duration: 1s;
+        }
+
+        /* --- CTA 區塊背景 (JOIN THE 311 SEASON) --- */
+        .cta-card {
+            background-color: transparent !important;
+            /* 覆蓋 inline style 的 #0a0a0a */
+        }
+
+        /* 底層：工業草圖背景 */
+        .cta-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('img/sketch_02.png');
+            background-size: cover;
+            background-position: center;
+            /* 稍微往下移一點，呈現不同的構圖 */
+
+            /* 暗黑反轉與亮度調整 */
+            filter: grayscale(100%) invert(1) brightness(0.7);
+            opacity: 0.4;
+            /* 控制背景圖的明顯程度 */
+            z-index: 0;
+        }
+
+        /* 中層：漸層遮罩 */
+        .cta-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* 由四周深色向中間透光的漸層，讓視覺聚焦在文字上 */
+            background: radial-gradient(circle at center, rgba(0, 75, 150, 0.4) 100%, rgba(5, 5, 5, 1) 0%);
+            /* background: radial-gradient(circle at center, rgba(10, 10, 15, 0.6) 0%, rgba(5, 5, 5, 0.95) 100%); */
+            z-index: 1;
+        }
+
+        /* --- 升級版 Footer 樣式 --- */
+        .footer-premium {
+            background: #030303;
+            /* 極致深黑 */
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid rgba(0, 102, 204, 0.2);
+        }
+
+        /* Footer 頂部藍色微光 */
+        .footer-premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 2px;
+            background: var(--kt-blue);
+            box-shadow: 0 0 40px 5px var(--kt-blue);
+            opacity: 0.5;
+        }
+
+        /* 金屬質感標語文字 */
+        .slogan-text {
+            background: linear-gradient(180deg, #ffffff 0%, #777777 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 1.8rem;
+        }
+
+        /* --- 升級版 Sticky Bar (毛玻璃面板) --- */
+        .sticky-bar-premium {
+            background: rgba(5, 5, 8, 0.75);
+            /* 半透明黑底 */
+            backdrop-filter: blur(15px);
+            /* 強烈毛玻璃模糊 */
+            -webkit-backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(0, 102, 204, 0.4);
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            transform: translateY(100%);
+            /* 預設隱藏，交給原本的 GSAP 動畫滑出 */
+        }
+
+        /* 霓虹發光按鈕 */
+        .btn-neon {
+            background: rgba(0, 102, 204, 0.1);
+            color: #fff;
+            border: 1px solid var(--kt-blue);
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px rgba(0, 102, 204, 0.4), inset 0 0 10px rgba(0, 102, 204, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-neon:hover {
+            background: var(--kt-blue);
+            color: #fff;
+            box-shadow: 0 0 20px rgba(0, 102, 204, 0.8), 0 0 40px rgba(0, 102, 204, 0.4);
+            transform: translateY(-2px);
+        }
     </style>
+
 </head>
 
 <body>
@@ -199,28 +601,76 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N87BGD4" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="position-fixed top-0 start-0 w-100 p-4 d-flex justify-content-start shadow"
-        style="z-index: 1000; background-color: #000;">
-        <img src="https://www.kingtony.com/2026_Ktday/img/KT%20logo-03.png" alt="KING TONY"
-            class="site-logo gs-logo-reveal" style="height: 50px; filter: brightness(0) invert(1);">
+    <nav class="position-fixed top-0 start-0 w-100 shadow marquee-nav" style="z-index: 1000;">
+        <div class="marquee-wrapper gs-fade-up">
+            <div class="marquee-group">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+            </div>
+            <div class="marquee-group">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+                <img src="img\icon\311-B-06.png" alt="311 TOOLS DAY">
+            </div>
+        </div>
     </nav>
     <header class="hero-section d-flex align-items-center justify-content-center">
         <div class="hero-overlay"></div>
-        <div class="container text-center position-relative" style="z-index: 2;">
-            <div class="d-inline-block border border-primary px-3 py-1 mb-4 rounded-pill gs-reveal"
+        <div class="container text-center position-relative" style="z-index: 2;"> 
+            <!-- <div style="margin-left: -42%; width: 100%;"><img src="img/KT logo-03.png" alt="KING TONY LOGO"
+                         class="mt-3 d-inline-block"
+                         style="width: 15%; vertical-align: baseline; ">
+            </div> -->
+            <!-- <div class="d-inline-block border border-primary px-3 py-1 mb-4 rounded-pill gs-reveal"
                 style="border-color: var(--kt-blue)!important; background: rgba(0,102,204,0.1);">
-                <span class="mono-text text-white">MARCH 11 | TOOL WORSHIP DAY</span>
+                <span class="mono-text text-white">MARCH 11 | TOOLS DAY</span>
+            </div> -->
+            
+            <div class="d-flex align-items-center justify-content-center position-relative w-100 mb-3 gs-reveal" style="min-height: 40px;">
+                
+                <div class="position-absolute start-0 top-50 translate-middle-y d-none d-md-block">
+                    <img src="img/KT logo-03.png" alt="KING TONY" 
+                         style="height: 50px; filter: brightness(0) invert(1);">
+                </div>
+
+                <div class="d-inline-flex align-items-center border px-4 py-2 rounded-pill"
+                    style="border-color: var(--kt-blue)!important; background: rgba(0, 102, 204, 0.15); backdrop-filter: blur(5px); box-shadow: 0 0 15px rgba(0,102,204,0.1);">
+                    <span class="mono-text fw-bold" style="color: var(--kt-blue); letter-spacing: 1px; font-size: 0.9rem;">MARCH 11</span>
+                    <span class="text-white mx-3 opacity-25">|</span>
+                    <span class="mono-text text-white" style="letter-spacing: 1px; font-size: 0.9rem;">TOOLS DAY</span>
+                </div>
+
             </div>
-
             <a href="https://www.kingtony.com/2026_Ktday/march11-tool-workship-day.php" style=" text-decoration: none;">
-                <h1 class="display-3 text-white mb-2 gs-reveal">THE STORY<br>OF <span class="text-blue">311</span></h1>
+                <!-- <h1 class="display-3 text-white mb-2 gs-reveal">THE STORY<br>OF </h1> -->
+               <h2 class="display-3 mt-2 text-white gs-reveal" style="line-height: 1.1;">
+                    THE STORY OF </br>
+                    
+                    <img src="img/311.png" alt="311 TOOLS DAY"
+                         class="ms-2 mt-2 d-inline-block"
+                         style="height: 1.5em; vertical-align: baseline; ">
+                </h2>
             </a>
-
-            <div class="glow-line gs-reveal"></div>
+            <!-- <span class="text-blue">311</span> -->
+            <div class="mt-4 glow-line gs-reveal"></div>
 
             <p class="lead text-white-50 gs-reveal px-3" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
-                When tools are respected, they give something back.<br>
-                Clarity, confidence, and pride.
+            <p class="gs-reveal" style="font-weight: 800;">Built for Those Who Build the World.</p>
+            <p class="lead text-white-50 gs-reveal px-3" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;">
+                Crossing more than 10 countries, this global campaign is dedicated to professionals, technicians, and
+                tool lovers everywhere.
+                During March 2026, participating countries will launch exclusive local campaigns.</p>
             </p>
 
             <div class="mt-5 gs-reveal">
@@ -228,7 +678,88 @@
             </div>
         </div>
     </header>
-    <section class="section-padding">
+    <section class="section-padding spotlight-section">
+        <div class="spotlight-glow"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row mb-5 text-center gs-fade-up">
+                <div class="col-12">
+                    <div class="d-inline-block px-3 py-1 mb-3"
+                        style="background: var(--kt-blue); color: #fff; font-weight: bold; letter-spacing: 2px; font-size: 0.8rem; box-shadow: 0 0 15px var(--kt-blue-glow);">
+                        EVENT SPOTLIGHT
+                    </div>
+                    <h2 class="display-5 mb-3" style="font-weight: 900; letter-spacing: 2px;">
+                        What’s Happening During <span class="text-blue">311</span>
+                    </h2>
+                    <!-- <p class="text-white-50 mx-auto" style="max-width: 800px; line-height: 1.6; font-size: 1.1rem;">
+                        This Tool Worship Day marketing strategy is built upon three mutually supportive tactical
+                        modules. Each tactic has clear objectives and execution methods, maximizing your business
+                        performance.
+                    </p> -->
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-12 col-lg-4 gs-fade-up">
+                    <div class="premium-card p-5 d-flex flex-column h-100">
+                        <div class="card-watermark">1</div>
+                        <div class="mb-4">
+                            <i class="fas fa-gift fa-3x text-highlight"
+                                style="filter: drop-shadow(0 0 8px rgba(255, 71, 87, 0.5));"></i>
+                        </div>
+                        <h3 class="text-white mb-2">Exclusive Efficiency Sets</h3>
+                        <p class="mono-text text-blue mb-4 fw-bold border-bottom border-secondary pb-2 d-inline-block">
+                            MAIN WEAPON</p>
+                        <p class="text-white-50 mt-0 mb-0" style="line-height: 1.8; font-size: 0.95rem;">
+                            Carefully assembled tool combinations designed to:</br>
+                            • Reduce downtime</br>
+                            • Increase productivity</br>
+                            • Simplify purchasing decisions</br>
+                            <span class="text-highlight">Everything you need — in one set.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 gs-fade-up">
+                    <div class="premium-card p-5 d-flex flex-column h-100">
+                        <div class="card-watermark">2</div>
+                        <div class="mb-4">
+                            <i class="fas fa-gift fa-3x text-highlight"
+                                style="filter: drop-shadow(0 0 8px rgba(255, 71, 87, 0.5));"></i>
+                        </div>
+                        <h3 class="text-white mb-2">Tiered Add-on Promotion</h3>
+                        <p class="mono-text text-blue mb-4 fw-bold border-bottom border-secondary pb-2 d-inline-block">
+                            PROFIT MULTIPLIER</p>
+                        <p class="text-white-50 mt-0 mb-0" style="line-height: 1.8; font-size: 0.95rem;">
+                            Spend more. Unlock more.</br>
+                            Reach the designated amount to access very limited add-on discounts — available only during
+                            Tools Day.</br>
+                            <span class="text-highlight">A smarter way to stock up while maximizing value.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 gs-fade-up">
+                    <div class="premium-card p-5 d-flex flex-column h-100">
+                        <div class="card-watermark">3</div>
+                        <div class="mb-4">
+                            <i class="fas fa-gift fa-3x text-highlight"
+                                style="filter: drop-shadow(0 0 8px rgba(255, 71, 87, 0.5));"></i>
+                        </div>
+                        <h3 class="text-white mb-2">Checkout Surprise Zone</h3>
+                        <p class="mono-text text-blue mb-4 fw-bold border-bottom border-secondary pb-2 d-inline-block">
+                            ZERO-COST REVENUE INCREASE</p>
+                        <p class="text-white-50 mt-0 mb-0" style="line-height: 1.8; font-size: 0.95rem;">
+                            Discover small but essential tools available in limited quantities at checkout.</br>
+                            Extra value.</br>
+                            <span class="text-highlight">The kind of tools you’ll always end up needing.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding gs-fade-up">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center gs-fade-up">
@@ -302,59 +833,62 @@
                 </div>
                 <div class="col-12 gs-text-reveal">
                     <p class="mono-text mb-2">KING TONY PROMISE</p>
-                    <h2 class="mb-4">WE DESIGN <br>PARTNERS.</h2>
-                    <p class="text-white-50">
-                        Tool Day isn’t about honoring objects—it’s about celebrating the relationship between you and
+                    <h1 class="mb-4">WE DESIGN <br>PARTNERS.</h1>
+                    <h6 class="text-white-50">
+                        Tool Day isn’t about honoring objects - </br>It’s about celebrating the relationship between you
+                        and
                         the tools you trust.
-                    </p>
+                    </h6>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="section-padding text-center container">
-        <div class="p-5 border border-secondary position-relative overflow-hidden gs-fade-up"
-            style="background: #0a0a0a;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--kt-blue);">
+        <div class="cta-card p-5 border border-secondary position-relative overflow-hidden gs-fade-up">
+
+            <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--kt-blue); z-index: 3;">
             </div>
 
-            <h2 class="mb-3">JOIN THE <span class="text-blue">311</span> SEASON</h2>
-            <p class="text-white-50 mb-4">Explore the collection and events in your region.</p>
+            <div class="position-relative" style="z-index: 2;">
+                <h2 class="mb-3">JOIN THE <span class="text-blue">311</span> SEASON</h2>
+                <p class="text-white-50 mb-4">Explore the collection and events in your region.</p>
 
-            <a href="https://www.facebook.com/KingTonyTool/?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link"
-                target="_blank" id="dynamic-social-btn" class="btn btn-kt-primary btn-lg">
-                <i class="fab fa-facebook-f me-2"></i> Explore Collection
-            </a>
+                <a href="https://www.facebook.com/KingTonyTool/?utm_source=311-Activity&utm_medium=btn&utm_campaign=FB_link"
+                    target="_blank" id="dynamic-social-btn" class="btn btn-kt-primary btn-lg">
+                    <i class="fab fa-facebook-f me-2"></i> Explore Collection
+                </a>
 
-            <p class="mt-3 mono-text small text-muted">
-                <i class="fas fa-map-marker-alt me-1"></i> DETECTED REGION: <span id="user-region"
-                    class="text-white">LOCATING...</span>
-            </p>
+                <!-- <p class="mt-3 mono-text small text-muted">
+                    <i class="fas fa-map-marker-alt me-1"></i> DETECTED REGION: <span id="user-region" class="text-white">LOCATING...</span>
+                </p> -->
+            </div>
         </div>
     </section>
-
-    <footer class="py-5 text-center border-top border-secondary bg-black" style="min-width: 320px;">
-        <div class="container" style="width: 100%;">
-            <p class="small text-muted">WORK IS COMPLEX. YOUR TOOLS SHOULDN'T BE.</p>
-            <img src="https://www.kingtony.com/images/logo.png" alt="King Tony"
-                style="height: 30px; opacity: 0.5; filter: grayscale(100%);">
+    <!-- 
+    <footer class="footer-premium py-5 text-center" style="min-width: 320px;">
+        <div class="container position-relative" style="z-index: 2;">
+            <h2 class="slogan-text mb-4 gs-fade-up">WORK IS COMPLEX.<br>YOUR TOOLS SHOULDN'T BE.</h2>
+            
+            <img src="https://www.kingtony.com/2026_Ktday/img/KT%20logo-03.png" alt="King Tony"
+                class="gs-fade-up" style="height: 35px; filter: brightness(0) invert(1); opacity: 0.7;">
+            
+            <div class="mt-5 pt-4 border-top border-secondary opacity-50 gs-fade-up">
+                <p class="small mono-text text-muted mb-0">&copy; 2026 KING TONY. ALL RIGHTS RESERVED.</p>
+            </div>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="sticky-bar fixed-bottom p-3 d-flex justify-content-between align-items-center"
+    <div class="sticky-bar sticky-bar-premium fixed-bottom p-3 d-flex justify-content-between align-items-center"
         style="min-width: 320px;">
-<<<<<<< HEAD
-=======
-=======
-    <div class="sticky-bar fixed-bottom p-3 d-flex justify-content-between align-items-center" style="min-width: 320px;">
->>>>>>> f4ae680422b4232f285151bd46093f1f3def45d3
->>>>>>> 8ebff323a8fe944e5bc649c65b6d2b2574460120
-        <div>
-            <span class="d-block mono-text" style="font-size: 0.7rem;">311 DAY</span>
-            <span class="fw-bold text-white small">International Tool Worship</span>
+        <div class="ms-md-3">
+            <span class="d-block mono-text text-blue"
+                style="font-size: 0.75rem; letter-spacing: 1px; font-weight: bold;">MARCH 11 </span>
+            <span class="fw-bold text-white" style="letter-spacing: 0.5px;">International Tools Day</span>
         </div>
-        <a href="https://www.facebook.com/KingTonyTool/" target="_blank" class="btn btn-sm btn-primary rounded-0"
-            style="background: var(--kt-blue); border: none;">
+        <a href="https://www.facebook.com/KingTonyTool/" target="_blank"
+            class="btn btn-neon px-4 py-2 me-md-3 rounded-0">
             JOIN NOW
         </a>
     </div>
@@ -395,21 +929,21 @@
                 console.log("User detected in:", countryCode);
 
                 // 更新文字顯示 (可選)
-                regionLabel.innerText = data.country_name.toUpperCase();
+                // regionLabel.innerText = data.country_name.toUpperCase();
 
                 // 判斷連結
                 if (socialLinks[countryCode]) {
                     btn.href = socialLinks[countryCode];
                 } else {
                     btn.href = socialLinks["GLOBAL"];
-                    regionLabel.innerText += " (GLOBAL SITE)";
+                    // regionLabel.innerText += " (GLOBAL SITE)";
                 }
             })
             .catch(error => {
                 console.error('Geo-location failed:', error);
                 // 失敗時回退到全球網址
                 btn.href = socialLinks["GLOBAL"];
-                regionLabel.innerText = "GLOBAL";
+                // regionLabel.innerText = "GLOBAL";
             });
 
 
