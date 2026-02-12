@@ -1181,53 +1181,46 @@ document.addEventListener('DOMContentLoaded', function() {
               <a href="https://www.kingtony.com/product_new.php?utm_source=311-Activity&utm_medium=btn&utm_campaign=Newproduct" data-i18n="learn-more" class="zz-btn zz-btn-outline newItems-btn">Learn more</a>
             </div>
           </div>
-          <a href="https://www.kingtony.com/catalogs/Tools-Storage-Tools-System-Sets/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Tools-Storage-Tools-System-Sets"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
-          <a href="https://www.kingtony.com/catalogs/Impact-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Impact-Sockets-and-Accessories"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
-          <a href="https://www.kingtony.com/catalogs/Hand-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Hand-Sockets-and-Accessories"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
-          <a href="https://www.kingtony.com/catalogs/Pneumatic-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Pneumatic-Tools"><img src="https://www.kingtony.com/upload/products_catalog/2402151418040000005.png" alt="05"><span data-i18n="cat-05">05</span></a>
+          <a href="https://www.kingtony.com/catalogs/Tools-Storage-Tools-System-Sets/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Tools-Storage-Tools-System-Sets">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
+          <a href="https://www.kingtony.com/catalogs/Impact-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Impact-Sockets-and-Accessories">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
+          <a href="https://www.kingtony.com/catalogs/Hand-Sockets-and-Accessories/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Hand-Sockets-and-Accessories">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
+          <a href="https://www.kingtony.com/catalogs/Pneumatic-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Pneumatic-Tools">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151418040000005.png" alt="05"><span data-i18n="cat-05">05</span></a>
         </div>
         <div class="keen-slider__slide zz-grid-desktop">
-          <a href="https://www.kingtony.com/catalogs/Torque-Control-Multipliers/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Torque-Control-Multipliers" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Torque_Wrench_lg.png" alt="06"><span data-i18n="cat-06">06</span></a>
-          <a href="https://www.kingtony.com/catalogs/Wrenches/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Wrenches"><img src="https://www.kingtony.com/upload/products_catalog/2402151421520000005.png" alt="07"><span data-i18n="cat-07">07</span></a>
-          <a href="https://www.kingtony.com/catalogs/Pliers/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Pliers"><img src="https://www.kingtony.com/upload/products_catalog/2402151422110000005.png" alt="08"><span data-i18n="cat-08">08</span></a>
-          <a href="https://www.kingtony.com/catalogs/Pipe-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Pipe-Tools"><img src="https://www.kingtony.com/upload/products_catalog/2402151422360000005.png" alt="09"><span data-i18n="cat-09">09</span></a>
-          <a href="https://www.kingtony.com/catalogs/Screwdrivers-Hex-Key-Bits/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Screwdrivers-Hex-Key-Bits"><img src="https://www.kingtony.com/upload/products_catalog/2402151423460000005.png" alt="10"><span data-i18n="cat-10">10</span></a>
+          <a href="https://www.kingtony.com/catalogs/Torque-Control-Multipliers/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Torque-Control-Multipliers" class="zz-item-lg">
+            <img src="https://www.kingtony.com/2026_Ktday/img/Torque_Wrench_lg.png" alt="06"><span data-i18n="cat-06">06</span></a>
+          <a href="https://www.kingtony.com/catalogs/Wrenches/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Wrenches">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151421520000005.png" alt="07"><span data-i18n="cat-07">07</span></a>
+          <a href="https://www.kingtony.com/catalogs/Pliers/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Pliers">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151422110000005.png" alt="08"><span data-i18n="cat-08">08</span></a>
+          <a href="https://www.kingtony.com/catalogs/Pipe-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Pipe-Tools">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151422360000005.png" alt="09"><span data-i18n="cat-09">09</span></a>
+          <a href="https://www.kingtony.com/catalogs/Screwdrivers-Hex-Key-Bits/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Screwdrivers-Hex-Key-Bits">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151423460000005.png" alt="10"><span data-i18n="cat-10">10</span></a>
         </div>
         <div class="keen-slider__slide zz-grid-desktop">
-          <a href="https://www.kingtony.com/catalogs/VDE-Insulated-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-VDE-Insulated-Tools" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/VDE_lg.png" alt="11"><span data-i18n="cat-11">11</span></a>
-          <a href="https://www.kingtony.com/catalogs/Electronic-Electrical/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Electronic-Electrical"><img src="https://www.kingtony.com/upload/products_catalog/2402151432060000005.png" alt="12"><span data-i18n="cat-12">12</span></a>
-          <a href="https://www.kingtony.com/catalogs/Hammer-and-Striking-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Hammer-and-Striking-Tools"><img src="https://www.kingtony.com/upload/products_catalog/2402151432270000005.png" alt="13"><span data-i18n="cat-13">13</span></a>
-          <a href="https://www.kingtony.com/catalogs/Workshop-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Workshop-Tools"><img src="https://www.kingtony.com/upload/products_catalog/2402151433280000005.png" alt="14"><span data-i18n="cat-14">14</span></a>
-          <a href="https://www.kingtony.com/catalogs/Lighting/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Lighting"><img src="https://www.kingtony.com/upload/products_catalog/2402151432560000005.png" alt="15"><span data-i18n="cat-15">15</span></a>
+          <a href="https://www.kingtony.com/catalogs/VDE-Insulated-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-VDE-Insulated-Tools" class="zz-item-lg">
+            <img src="https://www.kingtony.com/2026_Ktday/img/VDE_lg.png" alt="11"><span data-i18n="cat-11">11</span></a>
+          <a href="https://www.kingtony.com/catalogs/Electronic-Electrical/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Electronic-Electrical">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151432060000005.png" alt="12"><span data-i18n="cat-12">12</span></a>
+          <a href="https://www.kingtony.com/catalogs/Hammer-and-Striking-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Hammer-and-Striking-Tools">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151432270000005.png" alt="13"><span data-i18n="cat-13">13</span></a>
+          <a href="https://www.kingtony.com/catalogs/Workshop-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Workshop-Tools">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151433280000005.png" alt="14"><span data-i18n="cat-14">14</span></a>
+          <a href="https://www.kingtony.com/catalogs/Lighting/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Lighting">
+            <img src="https://www.kingtony.com/upload/products_catalog/2402151432560000005.png" alt="15"><span data-i18n="cat-15">15</span></a>
         </div>
         <div class="keen-slider__slide zz-grid-desktop">
-          <a href="https://www.kingtony.com/catalogs/Automotive-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Automotive-Tools" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
-          <a href="https://www.kingtony.com/catalogs/STARTER/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-STARTER"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
-          <a href="https://www.kingtony.com/catalogs/Promotional-Merchandise/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Promotional-Merchandise"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151313230000005.png" alt="02"><span data-i18n="cat-02">02</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151403130000005.png" alt="03"><span data-i18n="cat-03">03</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151417440000005.png" alt="04"><span data-i18n="cat-04">04</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151418040000005.png" alt="05"><span data-i18n="cat-05">05</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-desktop">
-          <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Torque_Wrench_lg.png" alt="06"><span data-i18n="cat-06">06</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151421520000005.png" alt="07"><span data-i18n="cat-07">07</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422110000005.png" alt="08"><span data-i18n="cat-08">08</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151422360000005.png" alt="09"><span data-i18n="cat-09">09</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151423460000005.png" alt="10"><span data-i18n="cat-10">10</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-desktop">
-          <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/VDE_lg.png" alt="11"><span data-i18n="cat-11">11</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432060000005.png" alt="12"><span data-i18n="cat-12">12</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432270000005.png" alt="13"><span data-i18n="cat-13">13</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151433280000005.png" alt="14"><span data-i18n="cat-14">14</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2402151432560000005.png" alt="15"><span data-i18n="cat-15">15</span></a>
-        </div>
-        <div class="keen-slider__slide zz-grid-desktop">
-          <a href="#" class="zz-item-lg"><img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
-          <a href="#"><img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
-        </div>
+          <a href="https://www.kingtony.com/catalogs/Automotive-Tools/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Automotive-Tools" class="zz-item-lg">
+            <img src="https://www.kingtony.com/2026_Ktday/img/Automotive_lg.png" alt="16"><span data-i18n="cat-16">16</span></a>
+          <a href="https://www.kingtony.com/catalogs/STARTER/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-STARTER">
+            <img src="https://www.kingtony.com/upload/products_catalog/2012111405220000005.png" alt="17"><span data-i18n="cat-17">17</span></a>
+          <a href="https://www.kingtony.com/catalogs/Promotional-Merchandise/?utm_source=KT-Web-Head-en&utm_medium=Pro-Cat-Promotional-Merchandise">
+            <img src="https://www.kingtony.com/upload/products_catalog/2012111405450000005.png" alt="18"><span data-i18n="cat-18">18</span></a>
       </div>
 
       <div id="zz-slider-mobile" class="keen-slider zz-mobile-only">
